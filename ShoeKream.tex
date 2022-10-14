@@ -58,14 +58,63 @@ so we make this service by paying attention to the value of the collection of sh
 \subsection{problem statement}
 \begin{itemize}
 \item In The case of limited-edition shoes, prices fluctuate significantly over time or depending on events, so collectors who own several shoes find it difficult to know the value of the collections at once.
-\item The shoe case so far is just a plastic drawer. There is only a storage function and the function of the exhibition is inferior
+\item The shoe case so far is just a plastic drawer. There is only a storage function and the function of the exhibition is inferior.
 \item There is no means to check the shoes stored at home outside.
-\item You can't see other people's shoe collection unless you go their home
+\item You can't see other people's shoe collection unless you go their home.
 \end{itemize}
 
 \section{Requirement Analysis}
 
-{research on any related software}
+{Requirement analysis}
+
+\subsection{Entry}
+
+If the user downloads and runs the application, the splash screen is required. The splash screen is a screen that appears for 1 to 2 seconds not to show the empty screen during loading of the app's data when running the application and will utilize the way to access the app screen naturally using the service's logo as the background. And the onboarding page will be displayed to the user explaining why the main functions and functions of ShoeKream are useful. The onboarding page consists of a description of the overall application, the sign-up button and the login button.\\
+
+\subsection{Login}
+On the login page, a form screen appears where users can enter e-mails and passwords. ShoeKream authenticates whether you are a user registered in the DB with two elements: an e-mail and a password. At the bottom of the login button, there is a button to sign up for membership and go to the password change screen.\\
+\begin{enumerate}
+    \item Fail to Login: The re-input request pop-up has occurred.\\
+    \item Sign up: Go to the member registration page.\\
+    \item Find password: Go to the password search page.\\
+\end{enumerate}
+
+\subsection{Sign up}
+ShoeKream requires four types of information when signing up for membership. This is the email and password used to check DB registration and the gender and year of birth required to configure the initial recommendation. And there is a password verification field to reduce password-related errors. When the membership registration is completed, go to the login page. \\
+\begin{enumerate}
+    \item Invalid: If an invalid value is entered in each field, a remark requesting re-entry occurs under the field.\\
+    \item Pass: If a valid value is entered in each field, a statement that it has been confirmed occurs under the field.\\
+    \item Fail to Sign-up: If you do not fill out each field or press the membership button while entering an invalid value, a pop-up occurs that requires re-entry.\\
+    \item Complete: A message congratulating membership and a button to go to the login page is exposed.\\
+\end{enumerate}
+
+\subsection{Main Page}
+Users can check the functions in the app at once on the main page. \\
+\begin{enumerate}
+    \item My ShoeCase\\
+    \item Finding Other User\\
+    \item Favorite ShoeCase\\
+\end{enumerate}
+
+\subsection{My ShoeCase}
+My ShoeCase page visualizes LG Styler ShoeCase on the web. (There is no ShoeCase in the first entry. There is a pop-up page that writes the name or serial number of the ShoeCase product, then a virtual ShoeCases will be created according to the number of rooms and size of the ShoeCase. A user can nickname the user's ShoeCase.
+
+\begin{enumerate}
+    \item Register Shoes by Style Code: There is a button for registering shoes in each section of the ShoeCase. When the user clicks the button, a pop-up window appears, and the user can search style code on the shoes site and register the shoes.
+\\
+    \item Registered Shoes Information: The name and price of the shoes displayed on the virtual ShoeCase. When the user clicks the shoes, The product’s site will appear to show the information of shoes linking with the shoes site.
+\\
+    \item Public/Private Setting: There is a checkbox to determine to show the user's ShoeCase
+\\
+    \item the number of heart: Those who have seen user's ShoeCase and like it press the heart. Total number of hearts is displayed.\\
+\end{enumerate}
+
+\subsection{Finding Other User}
+
+Other people's ShoeCase is listed only for those allowed to reveal their ShoeCase. The list displays the user's name and the nickname of the ShoeCase. When the user clicks the name of the person the user wants to see, the page switches to the that person's ShoeCase page.
+
+
+\section{Research on any related software}
 
 \subsection{Kream}
 
