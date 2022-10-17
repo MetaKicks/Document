@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.11)  14 OCT 2022 14:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.11)  18 OCT 2022 00:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -335,11 +335,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--80
  []
 
 
-Underfull \hbox (badness 2573) in paragraph at lines 83--85
-[]\OT1/ptm/m/n/10 ShoeKream re-quires four types of in-for-ma-tion when
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 83--85
 
  []
@@ -454,7 +449,7 @@ texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/20
 22/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2022/texmf-
 dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts
 /type1/urw/times/utmri8a.pfb>
-Output written on ShoeKream.pdf (4 pages, 138772 bytes).
+Output written on ShoeKream.pdf (4 pages, 138778 bytes).
 PDF statistics:
  73 PDF objects out of 1000 (max. 8388607)
  44 compressed objects within 1 object stream
