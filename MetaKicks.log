@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.11)  21 OCT 2022 11:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.11)  21 OCT 2022 12:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -325,12 +325,10 @@ Underfull \hbox (badness 2884) in paragraph at lines 66--66
  []
 
 
-Underfull \hbox (badness 1953) in paragraph at lines 90--91
-[]\OT1/ptm/m/n/10 If the user down-loads and runs the ap-pli-ca-tion, the
- []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--91
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
@@ -338,17 +336,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 90--91
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 93--95
+Underfull \hbox (badness 1509) in paragraph at lines 90--91
+\OT1/ptm/m/n/10 It serves as an on-line mar-ket-place, fa-cil-i-tat-ing auc-tio
+ns
+ []
+
+
+Underfull \hbox (badness 2088) in paragraph at lines 90--91
+\OT1/ptm/m/n/10 pay-ment fees. Sell-ers send pur-chased items to StockX
+ []
+
+
+Underfull \hbox (badness 1406) in paragraph at lines 90--91
+\OT1/ptm/m/n/10 his-to-ries for spe-cific items. StockX is most known for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
-
+Underfull \hbox (badness 2698) in paragraph at lines 92--93
+\OT1/ptm/m/n/10 A rep-re-sen-ta-tive home ap-pli-ance man-age-ment app that
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 2111) in paragraph at lines 92--93
+\OT1/ptm/m/n/10 pro-vides smart home ser-vices based on AI. With this
+ []
+
+
+Underfull \hbox (badness 1490) in paragraph at lines 92--93
+\OT1/ptm/m/n/10 ap-pli-ca-tion, you can con-trol not only home ap-pli-ances,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
 
  []
 
@@ -358,7 +382,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--98
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--103
+Underfull \hbox (badness 10000) in paragraph at lines 100--102
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
 
@@ -373,70 +402,66 @@ Underfull \hbox (badness 10000) in paragraph at lines 104--105
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
+Underfull \hbox (badness 10000) in paragraph at lines 108--111
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
+Underfull \hbox (badness 10000) in paragraph at lines 111--113
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--112
+Underfull \hbox (badness 3000) in paragraph at lines 113--115
+\OT1/ptm/m/n/10 Shoe-Case. When the user clicks the shoes, The
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--115
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+Underfull \hbox (badness 10000) in paragraph at lines 115--117
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
+Underfull \hbox (badness 10000) in paragraph at lines 117--119
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--115
+Underfull \hbox (badness 10000) in paragraph at lines 123--126
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--123
+Underfull \hbox (badness 10000) in paragraph at lines 126--128
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 123--125
+Underfull \hbox (badness 10000) in paragraph at lines 128--130
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--127
+Underfull \hbox (badness 10000) in paragraph at lines 134--137
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
+Underfull \hbox (badness 10000) in paragraph at lines 137--139
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--141
 
  []
 
 [2]
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
-93.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [3]
-LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 3
-08.
-
-(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/omsptm.fd
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 308.
- [4]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -448,33 +473,27 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[5
+[3
 
 ] (./MetaKicks.aux) ) 
 Here is how much of TeX's memory you used:
- 4211 strings out of 478268
- 65518 string characters out of 5846346
- 374920 words of memory out of 5000000
- 22373 multiletter control sequences out of 15000+600000
- 513811 words of font info for 112 fonts, out of 8000000 for 9000
+ 4127 strings out of 478268
+ 64446 string characters out of 5846346
+ 375846 words of memory out of 5000000
+ 22306 multiletter control sequences out of 15000+600000
+ 506229 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,11n,62p,1034b,301s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 55i,10n,62p,1167b,266s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8
-r.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10
-.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
-fb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb>
-</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></u
-sr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
-r/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/
-local/texlive/2022/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/te
-xlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022
-/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2022/texmf-di
-st/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/t
-ype1/urw/times/utmri8a.pfb>
-Output written on MetaKicks.pdf (5 pages, 140078 bytes).
+r.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.
+pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/
+local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/tex
+live/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/
+texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on MetaKicks.pdf (3 pages, 66094 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
- 46 compressed objects within 1 object stream
+ 40 PDF objects out of 1000 (max. 8388607)
+ 24 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
