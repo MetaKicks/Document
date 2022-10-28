@@ -47,7 +47,7 @@ zer0kola321@hanyang.ac.kr}
 \maketitle
 
 \begin{abstract}
-\textit{As the culture of collecting expensive designer, luxury and limited-edition sneakers grows among the MZ generation – Millennials and Gen Z – LG’s internal research found that these ‘sneakerheads’ would benefit greatly from a solution that not only made their cherished shoes stand out more, but also provided them with the optimal care. and LG provides LG ThinQ applications to connect its home appliances and consumers and provide consumers with a better experience. So our team thought that it would be good to virtualize the ShoeCase and manage it on the ThinQ app. By storing NFT sneakers in a MetaKicks, NFT that exists only virtually is collected as if it were stored in a LG Styler ShoeCase. In addition, designer collaboration and limited edition sneakers resell market has grown a lot, and we decided to create this service to check the resell market price of shoes in real time. Finally, we thought that the culture of collecting shoes could be further activated by taking out the shoe case that was only in my room on the web and creating a culture to share each other's shoes collections.}\end{abstract}
+\textit{As the culture of collecting expensive designer, luxury and limited-edition sneakers grows among the MZ generation – Millennials and Gen Z – LG’s internal research found that these ‘sneakerheads’ would benefit greatly from a solution that not only made their cherished shoes stand out more, but also provided them with the optimal care. and LG provides LG ThinQ applications to connect its home appliances and consumers and provide consumers with a better experience. So our team thought that it would be good to virtualize the ShoeCase and manage it on the ThinQ app. By storing nft sneakers in a MetaKicks, nft, which exists only virtually, is collected as if it were stored in a LG Styler ShoeCase. In addition, the limited edition of the shoe resell market has grown a lot, and we decided to create this service to check the resale market price of shoes in real time. Finally, we thought that the culture of collecting shoes could be further activated by taking out the shoe case that was only in my room on the web and creating a culture to share each other's shoes collections.}\end{abstract}
 
 \begin{table}[h]
 \caption{Role Assignments}
@@ -74,7 +74,7 @@ zer0kola321@hanyang.ac.kr}
 \section{Introduction}
 \subsection{Motivation}
 Shoe cases so far are made of plastic and can only function as storage and display shoes. But The LG Styler ShoeCase creates the ideal environment for storing shoes by protecting against humidity and fabric-discoloring UV light, the Styler ShoeCase represents a great way for shoe enthusiasts to show-off their favorite pairs, offering interior features such as a 360-degree rotating turntable to increase the value as a collection rather than just shoes. 
-NFT shoes are stored online, and real shoes are stored only in the shoe rack and managed separately. By using this, these two collections are managed by one app. We thought it would be good to share the collection, including NFT shoes, with various people to further boost the shoe collection culture.
+Nft shoes are stored online, and real shoes are stored only in the shoe rack and managed separately. By using this, these two collections are managed by one app. We thought it would be good to share the collection, including nft shoes, with various people to further boost the shoe collection culture.
 So we make this service by paying attention to the value of the collection. It check the fluctuating resell market price in real time using Kream or StockX's API, Korea and USA's leading sneakers trade site, and sharing each other's collections through this service.
 
 
@@ -144,11 +144,58 @@ There is no ShoeCases in the first entry. If you click the heart button on your 
 \\
 \end{enumerate}
 
-\section{Development Environment}
-\subsection{Choice of Development platform}
+\section{DEVELOPMENT ENVIRONMENT}
 
+\subsection{Software development platform}
+The development environment we chose is Windows and Mac. We developed it according to the operating system of each laptop, and built and operated the source code using the terminal functions of Windows and Mac. The front-end framework chose react-native and nodejs as the back-end development language. React-native is a cross-platform framework that can be developed simultaneously on Android and iOS operating systems, and it is the most popular front-end framework, so I chose it in the hope that it will be studied while working on the project. Nodejs is a run-time environment that allows you to run code that builds servers outside your browser based on JavaScript language, making it easy to expand servers and highly compatible with react-native, so we chose it as a back-end development language.
 
+\subsection{Cost estimation}
+adfa
+\\
+\subsection{Software in use}
+\begin{enumerate}
+	\item{KREAM}\\
+	\\
+	\centerline{\includegraphics[scale=0.2]{pics/KREAM.png}}\\
+It is a transaction brokerage platform that connects sellers and buyers anonymously. Similar to trading methods such as stocks and cryptocurrencies, it consists of presenting the price the seller wants to sell and accepting the price. Due to the nature of the asking price transaction, used goods are not handled because the premise that all items are the same is necessary. The main trading items are limited edition products such as clothing and fashion miscellaneous goods, and can be seen as a commonly referred to as a resale trading platform. Unlike general direct transaction platforms, products are traded through the KREAM inspection center. When the seller sends the product to the KREAM inspection center, the KREAM inspects it and sends it to the buyer.\\
+	\item{StockX}\\
+	\\
+	\centerline{\includegraphics[scale=0.2]{pics/StockX.png}}\\
+StockX serves as an online marketplace, facilitating auctions between sellers and buyers, then collecting transaction and payment fees. Sellers send purchased items to StockX facilities for inspection and verification, then authenticated products are shipped to buyers. StockX features a "stock market-like" variable pricing framework and discloses price histories for specific items. StockX is most known for sneakers and streetwear but also carries other clothing and accessories such as handbags and watches.\\
+	\item{LG ThinQ}\\
+	\\
+	\centerline{\includegraphics[scale=0.4]{pics/LG.png}}\\
+A representative home appliance management app that provides smart home services based on AI. With this application, you can control not only home appliances, but also all parts of the house, as well as check product status and malfunctions anytime, anywhere. In a situation in which the market environment is rapidly changing from 'supplier-centered' to 'consumer-centered, LG is providing these services, believing that the role of AI technology has grown.\\
 
+FirebaseUI Auth  (iOS/Android/Web)
+Client (Flutter Framework) / Google / Firebase
+stockx, kream, lg thinq, opensea, android Studio, VSCode,GitHub\\
+	\item{GitHub}\\
+	\\
+	\centerline{\includegraphics[scale=0.4]{pics/GitHub.png}}\\
+It is a representative free git platform, and a small platform between teams. In Mark-down language, you can create the above key in Mark-down language, and highlight the important content. Through all documents and functions of the project, it improved work ability to share all documents and functionality. We will also use the branch function to complete the coding of each part and combine it if there is no problem.We will use github to share works with each other and proceed with development gradually. Development documents are also periodically attached in latex file format.\\
+	\item{node.js}\\
+	\\
+	\centerline{\includegraphics[scale=0.13]{pics/nodejs.png}}\\
+Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on a JavaScript Engine (i.e. V8 engine) and executes JavaScript code outside a web browser, which was designed to build scalable network applications. Node.js lets developers use JavaScript to write command line tools and for server-side scripting—running scripts server-side to produce dynamic web page content before the page is sent to the user's web browser.We adopted Node.js as a backend system for developing applications. As for the front end, Node.js was considered suitable because React Native was selected in consideration of the interworking of JavaScript instead of flutter.\\
+	\item{React-Native}\\
+	\\
+	\centerline{\includegraphics[scale=0.4]{pics/React-Native.png}}\\
+React Native is an open-source UI software framework created by Meta Platforms, Inc. It is used to develop applications for Android, Android TV, iOS, macOS, tvOS, Web, Windows and UWP by enabling developers to use the React framework along with native platform capabilities. We adopted reactive native as a front-end system for developing applications. As for the backend, Node.js was selected instead of flask in consideration of the interworking of JavaScript, so I thought react native would be suitable.\\
+	\item{VScode}\\
+	\\
+	\centerline{\includegraphics[scale=0.05]{pics/VScode.png}}\\
+Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux, and macOS. It can be used with various programming languages such as Java, JavaScript, Go, Node.js, Python, C++, C, Rust, and Fortran.Features include debugging, syntax emphasis, intelligent code completion, snippet, code refactoring, and embedded Git support. Users can install extensions that change themes, keyboard shortcuts, preferences, and add additional features. VScode can utilize various languages, and we chose to take advantage of these VScode advantages.\\
+	\item{Firebase}\\
+	\\
+	\centerline{\includegraphics[scale=0.4]{pics/Firebase.png}}\\
+Firebase is a back-end service that provides essential functions for the web and mobile development environment, and plays a variety of roles, including authentication functions that make Google account functions easy and Firestore functions that enable database functions. In this project, we mainly used the authentication function to facilitate the implementation of the Google login function.\\
+	\item{mongoDB}\\
+	\\
+	\centerline{\includegraphics[scale=0.4]{pics/mongo.png}}\\
+MongoDB supports field, range query, and regular-expression searches. Queries can return specific fields of documents and also include user-defined JavaScript functions. Queries can also be configured to return a random sample of results of a given size. We will link the backend system Node.js with MongoDB. Among Nosql DBs, which can be said to be efficient when used with node.js, we intend to use Mongo DB, which is the most widely known.\\
+
+\end{enumerate}
 
 
 \end{document}
