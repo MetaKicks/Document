@@ -147,11 +147,49 @@ There is no ShoeCases in the first entry. If you click the heart button on your 
 \section{DEVELOPMENT ENVIRONMENT}
 
 \subsection{Software development platform}
-The development environment we chose is Windows and Mac. We developed it according to the operating system of each laptop, and built and operated the source code using the terminal functions of Windows and Mac. The front-end framework chose react-native and nodejs as the back-end development language. React-native is a cross-platform framework that can be developed simultaneously on Android and iOS operating systems, and it is the most popular front-end framework, so I chose it in the hope that it will be studied while working on the project. Nodejs is a run-time environment that allows you to run code that builds servers outside your browser based on JavaScript language, making it easy to expand servers and highly compatible with react-native, so we chose it as a back-end development language.
+The development environment we chose is Windows and Mac. We developed it according to the operating system of each laptop, and built and operated the source code using the terminal functions of Windows and Mac. The front-end framework chose react-native and nodejs as the back-end development language. React-native is a cross-platform framework that can be developed simultaneously on Android and iOS operating systems, and it is the most popular front-end framework, so I chose it in the hope that it will be studied while working on the project. Nodejs is a run-time environment that allows you to run code that builds servers outside your browser based on JavaScript language, making it easy to expand servers and highly compatible with react-native, so we chose it as a back-end development language.\\
+\begin{table}[h]
+\caption{Develop Environment}
+\def\arraystretch{1.25} \small
+    \begin{tabular}{|p{2.4cm}|p{5.0cm}|}
+	\hline
+	Name & Development Environment\\
+       \hline
+       Kwon Jihyun & Windows10 21H2, VScode 1.72.2, node.js 18.12.0 \\
+	\hline
+        Kim Younghwan & Windows10 21H2, VScode 1.72.2, node.js 18.12.0\\
+	\hline
+	\end{tabular}
+\end{table}
+\begin{table}
+\def\arraystretch{1.25} \small
+    \begin{tabular}{|p{2.4cm}|p{5.0cm}|}
+	\hline
+        Lee Jiyun & Windows10 21H2, VScode 1.72.2, node.js 18.12.0\\
+	\hline
+	Jeong Youngho & MacOS Monterey 12.6, VScode 1.72.2, node.js 18.12.0\\
+	\hline
+	\end{tabular}
+\end{table}
 
-\subsection{Cost estimation}
-adfa
-\\
+\begin{table}[h]
+\caption{Platform, Programming Language, Database}
+\def\arraystretch{1.25} \small
+    \begin{tabular}{|p{2.4cm}|p{5.0cm}|}
+	\hline
+	Tools and Language & Reason\\
+      \hline
+       Javascript & JavaScript is one of the most popular web development programming languages. It is one of the components of the web today, along with HTML and CSS. Javascript can handle not only the front-end but also the back-end. Javascript is the basic programming language for React and Node.js. With one programming language, we can care for each other and review. Javascript is easy and fast to manage posts posted in real time. \\
+	\hline
+        MongoDB & MongoDB is a NoSQL database that stores data as JSON-like documents. MongoDB enables us to build applications faster than sql, handle highly diverse data types, and manage applications more efficiently at scale. MongoDB is also easy to process vast amounts of data. Metakicks will handle the data of many user's shoecase, handling a large amount of data is required.\\
+	\hline
+        Node.js & Node.js is a software platform used to develop scalable network applications. Node.js utilizes JavaScript as the writing language and has high processing performance through non-blocking I/O and single thread event loops. Node.js has the ease of server expansion and can even write back-end in the required front-end language of JavaScript. Also Node.js has a strong point in services that require processing a huge amount of input output data.\\
+	\hline
+	React-Native & React native is a framework for developing Android and iOS apps using React's grammar. React native also uses Javascript as a programming language, so it has good versatility. Hot Reload and Live Reload of React native allows us to immediately apply the correction and confirm the correction immediately.\\
+	\hline
+	\end{tabular}
+\end{table}
+
 \subsection{Software in use}
 \begin{enumerate}
 	\item{KREAM}\\
@@ -166,10 +204,6 @@ StockX serves as an online marketplace, facilitating auctions between sellers an
 	\\
 	\centerline{\includegraphics[scale=0.4]{pics/LG.png}}\\
 A representative home appliance management app that provides smart home services based on AI. With this application, you can control not only home appliances, but also all parts of the house, as well as check product status and malfunctions anytime, anywhere. In a situation in which the market environment is rapidly changing from 'supplier-centered' to 'consumer-centered, LG is providing these services, believing that the role of AI technology has grown.\\
-
-FirebaseUI Auth  (iOS/Android/Web)
-Client (Flutter Framework) / Google / Firebase
-stockx, kream, lg thinq, opensea, android Studio, VSCode,GitHub\\
 	\item{GitHub}\\
 	\\
 	\centerline{\includegraphics[scale=0.4]{pics/GitHub.png}}\\
@@ -194,8 +228,30 @@ Firebase is a back-end service that provides essential functions for the web and
 	\\
 	\centerline{\includegraphics[scale=0.4]{pics/mongo.png}}\\
 MongoDB supports field, range query, and regular-expression searches. Queries can return specific fields of documents and also include user-defined JavaScript functions. Queries can also be configured to return a random sample of results of a given size. We will link the backend system Node.js with MongoDB. Among Nosql DBs, which can be said to be efficient when used with node.js, we intend to use Mongo DB, which is the most widely known.\\
-
+	\item{Express.js}\\
+	\\
+	\centerline{\includegraphics[scale=0.4]{pics/express.png}}\\
+Express.js is a web framework based on the core modules of Node.js, http and Connect components. Express.js helps developers quickly and easily develop with Node.js. Middleware with various functions written in JavaScript code can be used by combining Express with only what developers need. We use express.js as a standard server framework. With express.js, we connect mongoDB and handle the database.
 \end{enumerate}
+
+\subsection{Cost estimation}
+\begin{table}[h]
+\caption{Price of Tools}
+\def\arraystretch{1.25} \small
+    \begin{tabular}{|p{2.4cm}|p{5.0cm}|}
+	\hline
+	Tools & Price\\
+       \hline
+       LG gram 17 & 2,019,000 * 3 = 6,057,000 won\\
+	\hline
+       MacBook M2 & 2,090,000 won\\
+	\hline
+       AWS server & 10,000 won\\
+	\hline
+	Total & 8,157,000 won\\
+	\hline
+	\end{tabular}
+\end{table}
 
 
 \end{document}
