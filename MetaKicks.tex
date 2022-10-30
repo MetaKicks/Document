@@ -252,6 +252,53 @@ Express.js is a web framework based on the core modules of Node.js, http and Con
 	\hline
 	\end{tabular}
 \end{table}
+\section{Specification}
+
+\subsection{Login}
+When the user run the application, the login page appears first. Metakicks can log in through the Google account or Apple account. \\
+\begin{enumerate}
+    \item Login from screen\\\\
+\centerline{\includegraphics[scale=0.2]{pics/KREAM.png}}\\
+\\When the user run the application, there are two buttons for login. One is Google account, the other is Apple account. When the user clicks the button, login page for Google or Apple will appear. \\
+
+    \item Login failure\\\\
+\centerline{\includegraphics[scale=0.2]{pics/KREAM.png}}\\
+\\If the user failed to login Google/Apple or get error, a pop-up will appear to user. The message of the pop-up is “Error occurred while you log in. Please log in again.”. When the user clicks “confirm button”, pop-up disappear and back to login page.\\
+    \item How to implement\\
+\end{enumerate}
+
+\subsection{Main Page}
+When the login is completed, the splash screen will appear before the main page. Splash screen disappear in one second. There are three buttons to connect page of My ShoeCase, Finding Other User, Favorite ShoeCase. The user can manage his/her shoes in the Shoecase with this application and visit the other’s Shoecase. If the user presses the heart button on the other’s shoecase, that shoecase will be added to the Favorite Shoecase list.\\
+\begin{enumerate}
+	\item Splash Screen\\\\
+\centerline{\includegraphics[scale=0.2]{pics/KREAM.png}}\\
+\\When the user log in, this splash screen will appear. This screen lasts in 2 seconds not to show an empty page during the app’s data loading time.\\
+	\item Menu Page\\\\
+\centerline{\includegraphics[scale=0.2]{pics/KREAM.png}}\\
+\\Menu page shows this app’s statement and the button of three functions.\\\\
+	\begin{enumerate}
+\centerline{\includegraphics[scale=0.2]{pics/KREAM.png}}
+\item[-]Showing Metakick’s statement. \\\\
+	\end{enumerate}
+	\begin{enumerate}
+\centerline{\includegraphics[scale=0.2]{pics/KREAM.png}}
+\item[-]This button goes to the My ShoeCase page. The icon of this button is set to the first shoes in the user’s Shoecase. If there are no shoes in Shoecase, the icon is replaced with the default shoes icon. \\\\
+	\end{enumerate}
+	\begin{enumerate}
+\centerline{\includegraphics[scale=0.2]{pics/KREAM.png}}
+\item[-]This button goes to the Finding Other User page.\\\\
+	\end{enumerate}
+	\begin{enumerate}
+\centerline{\includegraphics[scale=0.2]{pics/KREAM.png}}
+\item[-]This button goes to the Favorite ShoeCase page\\\\
+	\end{enumerate}
+	\item Navigation bar\\\\
+\centerline{\includegraphics[scale=0.2]{pics/KREAM.png}}\\\\
+For user’s convenience, there is a navigation bar on the bottom. This consists of Home, My ShoeCase, Other User and Favorites. No matter which page it is, when the user presses the icon of navigation, it switches to the page selected by the user.\\
+	\item How to implement\\
+\end{enumerate}
+
+
 
 
 \end{document}
