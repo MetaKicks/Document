@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.11)  31 OCT 2022 01:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.11)  31 OCT 2022 15:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -940,6 +940,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 298--299
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 302--305
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--311
+
+ []
+
+
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
 
@@ -967,7 +977,7 @@ pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/
 local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/tex
 live/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/
 texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on MetaKicks.pdf (7 pages, 370132 bytes).
+Output written on MetaKicks.pdf (7 pages, 370989 bytes).
 PDF statistics:
  73 PDF objects out of 1000 (max. 8388607)
  35 compressed objects within 1 object stream
