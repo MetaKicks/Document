@@ -258,11 +258,9 @@ Express.js is a web framework based on the core modules of Node.js, http and Con
 When the user run the application, the login page appears first. Metakicks can log in through the Google account or Apple account. \\
 \begin{enumerate}
     \item Login from screen\\\\
-\centerline{\includegraphics[scale=0.2]{pics/KREAM.png}}\\
 \\When the user run the application, there are two buttons for login. One is Google account, the other is Apple account. When the user clicks the button, login page for Google or Apple will appear. \\
 
     \item Login failure\\\\
-\centerline{\includegraphics[scale=0.2]{pics/KREAM.png}}\\
 \\If the user failed to login Google/Apple or get error, a pop-up will appear to user. The message of the pop-up is “Error occurred while you log in. Please log in again.”. When the user clicks “confirm button”, pop-up disappear and back to login page.\\
     \item How to implement\\
 \end{enumerate}
@@ -271,29 +269,22 @@ When the user run the application, the login page appears first. Metakicks can l
 When the login is completed, the splash screen will appear before the main page. Splash screen disappear in one second. There are three buttons to connect page of My ShoeCase, Finding Other User, Favorite ShoeCase. The user can manage his/her shoes in the Shoecase with this application and visit the other’s Shoecase. If the user presses the heart button on the other’s shoecase, that shoecase will be added to the Favorite Shoecase list.\\
 \begin{enumerate}
 	\item Splash Screen\\\\
-\centerline{\includegraphics[scale=0.2]{pics/KREAM.png}}\\
 \\When the user log in, this splash screen will appear. This screen lasts in 2 seconds not to show an empty page during the app’s data loading time.\\
 	\item Menu Page\\\\
-\centerline{\includegraphics[scale=0.2]{pics/KREAM.png}}\\
 \\Menu page shows this app’s statement and the button of three functions.\\\\
 	\begin{enumerate}
-\centerline{\includegraphics[scale=0.2]{pics/KREAM.png}}
 \item[-]Showing Metakick’s statement. \\\\
 	\end{enumerate}
 	\begin{enumerate}
-\centerline{\includegraphics[scale=0.2]{pics/KREAM.png}}
 \item[-]This button goes to the My ShoeCase page. The icon of this button is set to the first shoes in the user’s Shoecase. If there are no shoes in Shoecase, the icon is replaced with the default shoes icon. \\\\
 	\end{enumerate}
 	\begin{enumerate}
-\centerline{\includegraphics[scale=0.2]{pics/KREAM.png}}
 \item[-]This button goes to the Finding Other User page.\\\\
 	\end{enumerate}
 	\begin{enumerate}
-\centerline{\includegraphics[scale=0.2]{pics/KREAM.png}}
 \item[-]This button goes to the Favorite ShoeCase page\\\\
 	\end{enumerate}
 	\item Navigation bar\\\\
-\centerline{\includegraphics[scale=0.2]{pics/KREAM.png}}\\\\
 For user’s convenience, there is a navigation bar on the bottom. This consists of Home, My ShoeCase, Other User and Favorites. No matter which page it is, when the user presses the icon of navigation, it switches to the page selected by the user.\\
 	\item How to implement\\
 \end{enumerate}
@@ -306,28 +297,34 @@ For user’s convenience, there is a navigation bar on the bottom. This consists
 	\item To register NFT shoes, you must use the "Register NFT Shoes" page. Click the NFT Register button and a window will appear asking you to enter the information for your shoes. In the window, you must enter the unique number of the cryptocurrency exchanged to buy the token. If you register by entering your unique number, the design of NFT shoes will be registered and displayed as a picture for viewing in the shoe rack.\\
 	\end{enumerate}
 	\item Registered Shoes Information\\
-In "Registered Shoes", registered shoes items can be clicked to display shoe information and real-time resell prices. 
+\\In "Registered Shoes", registered shoes items can be clicked to display shoe information and real-time resell prices. 
 The information and price of shoes are implemented to be obtained through the KREAM API from the app. 
 Through this, you can create an environment where you can share and brag about information with people who visit the shoe rack.\\
 	\item Public/Private Setting\\
-Each item property has a check box where you can set public/private. 
+\\Each item property has a check box where you can set public/private. 
 If the checkbox is marked, it will be disclosed. If it is checked, it will be closed.\\
 	\item The number of heart\\
-Each person's shoes have the ability to press hearts. 
+\\Each person's shoes have the ability to press hearts. 
 If you press hearts, you can visit the shoe rack of the person who pressed it. 
 The number of hearts is also calculated, so you can see how many people like it.\\
 \end{enumerate}
 
 \subsection{Finding Other User}
-Clicking on the magnifying glass icon pops up a search window.
-If you write down another user's email address or nickname in the search box, the query results will be listed
+\begin{enumerate}
+	\item Search Window\\
+\\Clicking on the magnifying glass icon pops up a search window. The search window consists of a search box and a keyboard.\\
+	\item Other user's ShoeCase list\\
+\\If you write down another user's email address or nickname in the search box, the query results will be listed
 Clicking on an individual item in the list takes you to the user's individual ShoeCase page depending on whether that is disclosed or not.\\
+\end{enumerate}
 
 \subsection{Other user's ShoeCase}
-Similar to my ShoeCase page, virtualize other user's ShoeCase.
-You can see the shoes registered by the user on the ShoeCase page. 
-If you click on the shoes you want to see the price change in detail, the price change for [a month] is displayed as a line graph. 
+\begin{enumerate}
+	\item Main ShoeCase Page\\
+\\Similar to my ShoeCase page, virtualize other user's ShoeCase.
+The shoes of another person's ShoeCase found by searching by id are displayed on the screen frame by frame or list. And just below the user id in the upper center, there is a mark indicating the number of kicks and a clicks button that can be pressed. Kicks is a recommended button that you can press when you like someone else's ShoeCase. (similar to a heart on Instagram). The higher the recommended button, the more popular the person's ShoeCase is. And the other person appears in order of the most attached shoes, and the three shoes in order are marked with 1st 2nd 3rd.\\
+	\item Detailed ShoeCase Page\\
+\\If you click on the shoes you want to see the price change in detail, you can check the information about the shoes. The information about shoes is the name of the shoes, the real-time present price of shoes from the shoe company (ex Nike or Adidas), stockx api, manufacturing year and so on.
 It has a heart icon for favorites and displays the total number of hearts for that user next to it.\\
-
-
+\end{enumerate}
 \end{document}
