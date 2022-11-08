@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.11)  3 NOV 2022 22:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.11)  8 NOV 2022 12:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -310,6 +310,9 @@ Overfull \hbox (3.07822pt too wide) in paragraph at lines 61--61
  []
 
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 Underfull \hbox (badness 1960) in paragraph at lines 71--71
 []\OT1/ptm/m/n/9 Development Man-ager man-ages
  []
@@ -423,12 +426,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 122--124
 
  []
 
-
+[2]
 Underfull \hbox (badness 10000) in paragraph at lines 128--131
 
  []
 
-[2]
+
 Underfull \hbox (badness 10000) in paragraph at lines 131--133
 
  []
@@ -469,6 +472,9 @@ Underfull \hbox (badness 4492) in paragraph at lines 169--170
  []
 
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 181--181
 []\OT1/ptm/m/n/9 Tools and
  []
@@ -501,11 +507,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 196--200
 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3]
-<pics/StockX.png, id=18, 867.24pt x 172.4844pt>
+<pics/StockX.png, id=15, 867.24pt x 172.4844pt>
 File: pics/StockX.png Graphic file (type png)
 <use pics/StockX.png>
 Package pdftex.def Info: pics/StockX.png  used on input line 202.
@@ -530,7 +532,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 200--204
 
  []
 
-<pics/LG.png, id=19, 302.12875pt x 167.62625pt>
+<pics/LG.png, id=16, 302.12875pt x 167.62625pt>
 File: pics/LG.png Graphic file (type png)
 <use pics/LG.png>
 Package pdftex.def Info: pics/LG.png  used on input line 206.
@@ -552,6 +554,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 204--208
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3 <./pics/KREAM.png> <./pics/StockX.png (PNG copy)>]
+Underfull \vbox (badness 2285) has occurred while \output is active []
 
 <pics/GitHub.png, id=20, 334.24875pt x 151.56625pt>
 File: pics/GitHub.png Graphic file (type png)
@@ -621,8 +626,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 216--220
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4 <./pics/KREAM.png> <./pics/StockX.png (PNG copy)> <./pics/LG.png> <./pics/G
-itHub.png> <./pics/nodejs.png> <./pics/React-Native.png>]
+ [4 <./pics/LG.png> <./pics/GitHub.png> <./pics/nodejs.png> <./pics/React-Nativ
+e.png>]
 <pics/VScode.png, id=31, 2055.68pt x 2055.68pt>
 File: pics/VScode.png Graphic file (type png)
 <use pics/VScode.png>
@@ -756,13 +761,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 264--266
 
  []
 
-
+[5 <./pics/VScode.png> <./pics/Firebase.png> <./pics/mongo.png> <./pics/express
+.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 266--267
 
  []
 
-[5 <./pics/VScode.png> <./pics/Firebase.png> <./pics/mongo.png> <./pics/express
-.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 270--272
 
  []
@@ -989,18 +994,18 @@ Before submitting the final camera ready copy, remember to:
 Here is how much of TeX's memory you used:
  4201 strings out of 478268
  65806 string characters out of 5846346
- 374846 words of memory out of 5000000
+ 376846 words of memory out of 5000000
  22367 multiletter control sequences out of 15000+600000
  507814 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,11n,62p,1167b,266s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 55i,11n,62p,1291b,266s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8
 r.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.
 pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/
 local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/tex
 live/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/
 texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on MetaKicks.pdf (7 pages, 372408 bytes).
+Output written on MetaKicks.pdf (7 pages, 372780 bytes).
 PDF statistics:
  73 PDF objects out of 1000 (max. 8388607)
  35 compressed objects within 1 object stream
