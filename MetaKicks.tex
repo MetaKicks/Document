@@ -269,27 +269,34 @@ When the user run the application, the login page appears first. Metakicks can l
 \end{enumerate}
 
 \subsection{Main Page}
-When the login is completed, the splash screen will appear before the main page. Splash screen disappear in one second. There are three buttons to connect page of My ShoeCase, Finding Other User, Favorite ShoeCase. The user can manage his/her shoes in the ShoeCase with this application and visit the other’s ShoeCase. If the user presses the Kick button on the other’s ShoeCase, that ShoeCase will be added to the Favorite ShoeCase list.\\
+\centerline{\includegraphics[scale=0.3]{pics/main_page.png}}
+If you go to the Metakicks homepage, the main page appears. At the center of the main page, there is the name of  the Metakicks and at the bottom there is the search bar. On the main page, there is "Trending Now" block, which shows the current trendy products based on the stockx site. When a user presses the shoe image, a detailed description of the shoe is provided. In the upper right corner of "Trending Now", there is a button to "My ShoeCase", and when you click the button, it shows the user's shoecase. The Searchbar in the center of the page allows you to search for other shoes based on stockx data, and when you want to add the shoes to your shoecase, you can use the searchbar to find shoes and add them to your shoecase. The navigation bar at the top of the main page has buttons to go to the "Finding Other User" page where you can find other users, the "Home" button, the "Login" button, and the "About" button to the site that explains this web.\\
 \begin{enumerate}
-	\item Splash Screen\\\\
-\\When the user log in, this splash screen will appear. This screen lasts in 2 seconds not to show an empty page during the app’s data loading time.\\
-	\item Menu Page\\\\
-\\Menu page shows this app’s statement and the button of three functions.\\\\
+	\item Trending Now \\\\
+\centerline{\includegraphics[scale=0.3]{pics/trending.png}}
+\\ "Trending now" is organized at the bottom of the main page. "Trending now" shows the names and photos of the products currently popular on Stockx, which is the shoes trading site. If you click on a photo of the products that are on screen, a "Pop-Up" with product details appears.\\
+	\item Trending Shoes Pop-Up\\\\
+\centerline{\includegraphics[scale=0.35]{pics/trending_detail.png}}
+\\When the user clicks the image in "Trending now", a pop-up page appears. The pop-up contains the price of shoes and detailed information about shoes.\\\\
+	\item Search Bar \\\\
+In the middle of the main page, there is a search bar. This search bar allows you to search for shoes based on stockx data. When the user enters a search word, shoes including the search word are displayed on the screen. Like "Trending Now" page, when the user clicks on an image of a shoes, a pop-up page appears with prices and details about the shoes.\\
+	\item Search Shoes Pop-Up\\
+\centerline{\includegraphics[scale=0.35]{pics/search_detail.png}}
+\\When the user clicks the image of the shoes in the search result, a pop-up window appears. The pop-up contains the price of shoes and information about shoes. Also, unlike the pop-up of "Trending Now," the user can add the shoes to the user's shoecase on this pop-up page. \\
+	\item Navigation Bar \\
 	\begin{enumerate}
-\item[-]Showing Metakick’s statement. \\\\
+		\item[-]Home Button \\\\
+		If the user clicks this "Home" button, it goes to the first page of main page.\\
 	\end{enumerate}
 	\begin{enumerate}
-\item[-]This button goes to the My ShoeCase page. The icon of this button is set to the first shoes in the user’s ShoeCase. If there are no shoes in ShoeCase, the icon is replaced with the default shoes icon. \\\\
+		\item[-]Finding User Button \\\\
+		If the user clicks this "Finding User Button" button, it goes to the finding other user page.\\
 	\end{enumerate}
 	\begin{enumerate}
-\item[-]This button goes to the Finding Other User page.\\\\
+		\item[-]About Button \\\\
+		If the user clicks this "About Button" button, it goes to the detailed description of this web.\\
 	\end{enumerate}
-	\begin{enumerate}
-\item[-]This button goes to the Favorite ShoeCase page\\\\
-	\end{enumerate}
-	\item Navigation bar\\\\
-For user’s convenience, there is a navigation bar on the bottom. This consists of Home, My ShoeCase, Other User and Favorites. No matter which page it is, when the user presses the icon of navigation, it switches to the page selected by the user.\\
-	\item How to implement\\
+
 \end{enumerate}
 
 \subsection{My ShoeCase}
