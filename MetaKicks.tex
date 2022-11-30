@@ -197,43 +197,43 @@ The development environment we chose is Windows and Mac. We developed it accordi
 \begin{enumerate}
 	\item{KREAM}\\
 	\\
-	\centerline{\includegraphics[scale=0.2]{pics/KREAM.png}}\\
+	\centerline{\includegraphics[scale=0.2]{pics/KREAM.png}}\\\\
 It is a transaction brokerage platform that connects sellers and buyers anonymously. Similar to trading methods such as stocks and cryptocurrencies, it consists of presenting the price the seller wants to sell and accepting the price. Due to the nature of the asking price transaction, used goods are not handled because the premise that all items are the same is necessary. The main trading items are limited edition products such as clothing and fashion miscellaneous goods, and can be seen as a commonly referred to as a resale trading platform. Unlike general direct transaction platforms, products are traded through the KREAM inspection center. When the seller sends the product to the KREAM inspection center, the KREAM inspects it and sends it to the buyer.\\
 	\item{StockX}\\
 	\\
-	\centerline{\includegraphics[scale=0.2]{pics/StockX.png}}\\
+	\centerline{\includegraphics[scale=0.2]{pics/StockX.png}}\\\\
 StockX serves as an online marketplace, facilitating auctions between sellers and buyers, then collecting transaction and payment fees. Sellers send purchased items to StockX facilities for inspection and verification, then authenticated products are shipped to buyers. StockX features a "stock market-like" variable pricing framework and discloses price histories for specific items. StockX is most known for sneakers and streetwear but also carries other clothing and accessories such as handbags and watches.\\
 	\item{LG ThinQ}\\
 	\\
-	\centerline{\includegraphics[scale=0.4]{pics/LG.png}}\\
+	\centerline{\includegraphics[scale=0.4]{pics/LG.png}}\\\\
 A representative home appliance management app that provides smart home services based on AI. With this application, you can control not only home appliances, but also all parts of the house, as well as check product status and malfunctions anytime, anywhere. In a situation in which the market environment is rapidly changing from 'supplier-centered' to 'consumer-centered, LG is providing these services, believing that the role of AI technology has grown.\\
 	\item{GitHub}\\
 	\\
-	\centerline{\includegraphics[scale=0.4]{pics/GitHub.png}}\\
+	\centerline{\includegraphics[scale=0.4]{pics/GitHub.png}}\\\\
 It is a representative free git platform, and a small platform between teams. In Mark-down language, you can create the above key in Mark-down language, and highlight the important content. Through all documents and functions of the project, it improved work ability to share all documents and functionality. We will also use the branch function to complete the coding of each part and combine it if there is no problem.We will use github to share works with each other and proceed with development gradually. Development documents are also periodically attached in latex file format.\\
 	\item{node.js}\\
 	\\
-	\centerline{\includegraphics[scale=0.13]{pics/nodejs.png}}\\
+	\centerline{\includegraphics[scale=0.13]{pics/nodejs.png}}\\\\
 Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on a JavaScript Engine (i.e. V8 engine) and executes JavaScript code outside a web browser, which was designed to build scalable network applications. Node.js lets developers use JavaScript to write command line tools and for server-side scripting—running scripts server-side to produce dynamic web page content before the page is sent to the user's web browser.We adopted Node.js as a backend system for developing applications. As for the front end, Node.js was considered suitable because React Native was selected in consideration of the interworking of JavaScript instead of flutter.\\
 	\item{React-Native}\\
 	\\
-	\centerline{\includegraphics[scale=0.4]{pics/React-Native.png}}\\
+	\centerline{\includegraphics[scale=0.4]{pics/React-Native.png}}\\\\
 React Native is an open-source UI software framework created by Meta Platforms, Inc. It is used to develop applications for Android, Android TV, iOS, macOS, tvOS, Web, Windows and UWP by enabling developers to use the React framework along with native platform capabilities. We adopted reactive native as a front-end system for developing applications. As for the backend, Node.js was selected instead of flask in consideration of the interworking of JavaScript, so I thought react native would be suitable.\\
 	\item{VScode}\\
 	\\
-	\centerline{\includegraphics[scale=0.05]{pics/VScode.png}}\\
+	\centerline{\includegraphics[scale=0.05]{pics/VScode.png}}\\\\
 Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux, and macOS. It can be used with various programming languages such as Java, JavaScript, Go, Node.js, Python, C++, C, Rust, and Fortran.Features include debugging, syntax emphasis, intelligent code completion, snippet, code refactoring, and embedded Git support. Users can install extensions that change themes, keyboard shortcuts, preferences, and add additional features. VScode can utilize various languages, and we chose to take advantage of these VScode advantages.\\
 	\item{Firebase}\\
 	\\
-	\centerline{\includegraphics[scale=0.4]{pics/Firebase.png}}\\
+	\centerline{\includegraphics[scale=0.4]{pics/Firebase.png}}\\\\
 Firebase is a back-end service that provides essential functions for the web and mobile development environment, and plays a variety of roles, including authentication functions that make Google account functions easy and Firestore functions that enable database functions. In this project, we mainly used the authentication function to facilitate the implementation of the Google login function.\\
 	\item{mongoDB}\\
 	\\
-	\centerline{\includegraphics[scale=0.4]{pics/mongo.png}}\\
+	\centerline{\includegraphics[scale=0.4]{pics/mongo.png}}\\\\
 MongoDB supports field, range query, and regular-expression searches. Queries can return specific fields of documents and also include user-defined JavaScript functions. Queries can also be configured to return a random sample of results of a given size. We will link the backend system Node.js with MongoDB. Among Nosql DBs, which can be said to be efficient when used with node.js, we intend to use Mongo DB, which is the most widely known.\\
 	\item{Express.js}\\
 	\\
-	\centerline{\includegraphics[scale=0.4]{pics/express.png}}\\
+	\centerline{\includegraphics[scale=0.4]{pics/express.png}}\\\\
 Express.js is a web framework based on the core modules of Node.js, http and Connect components. Express.js helps developers quickly and easily develop with Node.js. Middleware with various functions written in JavaScript code can be used by combining Express with only what developers need. We use express.js as a standard server framework. With express.js, we connect mongoDB and handle the database.
 \end{enumerate}
 
@@ -257,33 +257,53 @@ Express.js is a web framework based on the core modules of Node.js, http and Con
 \end{table}
 \section{Specification}
 
-\subsection{Login}
-When the user run the application, the login page appears first. Metakicks can log in through the Google account or Apple account. \\
-\begin{enumerate}
-    \item Login from screen\\\\
-\\When the user run the application, there are two buttons for login. One is Google account, the other is Apple account. When the user clicks the button, login page for Google or Apple will appear. \\
-
-    \item Login failure\\\\
-\\If the user failed to login Google/Apple or get error, a pop-up will appear to user. The message of the pop-up is “Error occurred while you log in. Please log in again.”. When the user clicks “confirm button”, pop-up disappear and back to login page.\\
-    \item How to implement\\
-\end{enumerate}
-
 \subsection{Main Page}
 \centerline{\includegraphics[scale=0.3]{pics/main_page.png}}
-If you go to the Metakicks homepage, the main page appears. At the center of the main page, there is the name of  the Metakicks and at the bottom there is the search bar. On the main page, there is "Trending Now" block, which shows the current trendy products based on the stockx site. When a user presses the shoe image, a detailed description of the shoe is provided. In the upper right corner of "Trending Now", there is a button to "My ShoeCase", and when you click the button, it shows the user's shoecase. The Searchbar in the center of the page allows you to search for other shoes based on stockx data, and when you want to add the shoes to your shoecase, you can use the searchbar to find shoes and add them to your shoecase. The navigation bar at the top of the main page has buttons to go to the "Finding Other User" page where you can find other users, the "Home" button, the "Login" button, and the "About" button to the site that explains this web.\\
+If you go to the Metakicks homepage, the main page appears. At the center of the main page, there is the name of  the Metakicks and at the bottom there is the search bar. On the main page, there is "Trending Now" block, which shows the current trendy products based on the stockx site. When a user presses the shoe image, a detailed description of the shoe is provided. In the upper right corner of "Trending Now", there is a button to "My ShoeCase", and when you click the button, it shows the user's shoecase. The Searchbar in the center of the page allows you to search for other shoes based on stockx data, and when you want to add the shoes to your shoecase, you can use the searchbar to find shoes and add them to your shoecase. The navigation bar at the top of the main page has buttons to login, register, search other user.\\\\
 \begin{enumerate}
+\item{Login}
+\\\\\centerline{\includegraphics[scale=0.6]{pics/login.png}}
+When the user presses the login button at the top of the main page, the login pop-up page appears. When the user enters the user's email and password, the login is successful.\\
+\item{Login failure}\\
+\\If the user failed to login Google/Apple or get error, a pop-up will appear to user. The message of the pop-up is “Error occurred while you log in. Please log in again.”. When the user clicks “confirm button”, pop-up disappear and back to login page.\\
+\item{User Register}\\
+\\\centerline{\includegraphics[scale=0.6]{pics/register.png}}\\
+\\To sign up for the membership, Metakicks requires the user's name, email address, password and verifing password.\\
+	\begin{enumerate}
+		\item[-]The name must be entered in 8 characters or less.\\\\
+	\end{enumerate}
+	\begin{enumerate}
+		\item[-]The e-mail will be exposed to the phrase asking you in follow the e-mail format and enter it.\\\\
+	\end{enumerate}
+	\begin{enumerate}
+		\item[-]The password should be the combination of english and numbers with over 8 characters.\\\\
+	\end{enumerate}
+	\begin{enumerate}
+		\item[-]In the password verification, the same character should be typed in this sector. If the user types the different character, registration will be denyed.\\\\
+	\end{enumerate}
+
+
 	\item Trending Now \\\\
-\centerline{\includegraphics[scale=0.3]{pics/trending.png}}
-\\ "Trending now" is organized at the bottom of the main page. "Trending now" shows the names and photos of the products currently popular on Stockx, which is the shoes trading site. If you click on a photo of the products that are on screen, a "Pop-Up" with product details appears.\\
+\\\centerline{\includegraphics[scale=0.3]{pics/trending.png}}
+\\\\ "Trending now" is organized at the bottom of the main page. "Trending now" shows the names and photos of the products currently popular on Stockx, which is the shoes trading site. If you click on a photo of the products that are on screen, a "Pop-Up" with product details appears.\\
 	\item Trending Shoes Pop-Up\\\\
-\centerline{\includegraphics[scale=0.35]{pics/trending_detail.png}}
+\\\centerline{\includegraphics[scale=0.35]{pics/trending_detail.png}}
 \\When the user clicks the image in "Trending now", a pop-up page appears. The pop-up contains the price of shoes and detailed information about shoes.\\\\
 	\item Search Bar \\\\
+\centerline{\includegraphics[scale=0.35]{pics/searchbar.png}}
 In the middle of the main page, there is a search bar. This search bar allows you to search for shoes based on stockx data. When the user enters a search word, shoes including the search word are displayed on the screen. Like "Trending Now" page, when the user clicks on an image of a shoes, a pop-up page appears with prices and details about the shoes.\\
 	\item Search Shoes Pop-Up\\
-\centerline{\includegraphics[scale=0.35]{pics/search_detail.png}}
+\\\centerline{\includegraphics[scale=0.35]{pics/search_detail.png}}
 \\When the user clicks the image of the shoes in the search result, a pop-up window appears. The pop-up contains the price of shoes and information about shoes. Also, unlike the pop-up of "Trending Now," the user can add the shoes to the user's shoecase on this pop-up page. \\
 	\item Navigation Bar \\
+	\begin{enumerate}
+		\item[-]Login Button \\\\
+		If the user clicks this "Login" button,login pop-up appears.\\
+	\end{enumerate}
+	\begin{enumerate}
+		\item[-]Register Button \\\\
+		If the user clicks this "Register" button, registration pop-up appears.\\
+	\end{enumerate}
 	\begin{enumerate}
 		\item[-]Home Button \\\\
 		If the user clicks this "Home" button, it goes to the first page of main page.\\
@@ -294,7 +314,7 @@ In the middle of the main page, there is a search bar. This search bar allows yo
 	\end{enumerate}
 	\begin{enumerate}
 		\item[-]About Button \\\\
-		If the user clicks this "About Button" button, it goes to the detailed description of this web.\\
+		If the user clicks this "About" button, it goes to the detailed description of this web.\\
 	\end{enumerate}
 
 \end{enumerate}
@@ -302,11 +322,9 @@ In the middle of the main page, there is a search bar. This search bar allows yo
 \subsection{My ShoeCase}
 When the user presses the "My Shocase" button on the upper right of "Trending Now" on the main page, it switches to its own Shocase screen. Users can add shoes searched on the Search bar to My shoecase, and the added shoes are displayed on this screen. In My Shocase, you can check the price of registered shoes and check the environment for shoe management, such as the temperature and humidity of the shoecase where the shoes are stored.\\
 \begin{enumerate}
-	\item Register Shoes
-	\begin{enumerate}
-	\item To register your shoes in the ShoeCase, you need to use the search bar to search shoes. If the user finds the shoes that the user want to register, the user can register the shoes through click the "Add to my ShoeCase"button in search shoes pop-up. My Shoecase page display the registered shoes.\\
-	\item To register NFT shoes, you must use the "Register NFT Shoes" page. Click the NFT Register button and a window will appear asking you to enter the information for your shoes. In the window, you must enter the unique number of the cryptocurrency exchanged to buy the token. If you register by entering your unique number, the design of NFT shoes will be registered and displayed as a picture for viewing in the ShoeCase.\\
-	\end{enumerate}
+	\item Register Shoes\\\\
+To register your shoes in the ShoeCase, you need to use the search bar to search shoes. If the user finds the shoes that the user want to register, the user can register the shoes through click the "Add to my ShoeCase"button in search shoes pop-up. My Shoecase page display the registered shoes.\\
+	
 	\item Registered Shoes Information\\
 \\In "Registered Shoes", registered shoes items can be clicked to display shoe information and real-time resell prices. 
 The information and price of shoes are implemented to be obtained through the KREAM API from the app. 
