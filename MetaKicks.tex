@@ -263,12 +263,12 @@ If you go to the Metakicks homepage, the main page appears. At the center of the
 \begin{enumerate}
 \item{Login}
 \\\\\centerline{\includegraphics[scale=0.6]{pics/login.png}}
-When the user presses the login button at the top of the main page, the login pop-up page appears. When the user enters the user's email and password, the login is successful.\\
+\\\\When the user presses the login button at the top of the main page, the login pop-up page appears. When the user enters the user's email and password, the login is successful.\\
 \item{Login failure}\\
-\\If the user failed to login Google/Apple or get error, a pop-up will appear to user. The message of the pop-up is “Error occurred while you log in. Please log in again.”. When the user clicks “confirm button”, pop-up disappear and back to login page.\\
-\item{User Register}\\
+\\If the user failed to login Google/Apple or get error, a pop-up will appear to user. The message of the pop-up is “Error occurred while you log in. Please log in again.”. When the user clicks “confirm button”, pop-up disappear and back to login page.\\\\
+\item{User Register}\\\\
 \\\centerline{\includegraphics[scale=0.6]{pics/register.png}}\\
-\\To sign up for the membership, Metakicks requires the user's name, email address, password and verifing password.\\
+\\\\To sign up for the membership, Metakicks requires the user's name, email address, password and verifing password.\\
 	\begin{enumerate}
 		\item[-]The name must be entered in 8 characters or less.\\\\
 	\end{enumerate}
@@ -284,15 +284,15 @@ When the user presses the login button at the top of the main page, the login po
 
 
 	\item Trending Now \\\\
-\\\centerline{\includegraphics[scale=0.3]{pics/trending.png}}
+\\\centerline{\includegraphics[scale=0.3]{pics/trending.png}}\\
 \\\\ "Trending now" is organized at the bottom of the main page. "Trending now" shows the names and photos of the products currently popular on Stockx, which is the shoes trading site. If you click on a photo of the products that are on screen, a "Pop-Up" with product details appears.\\
 	\item Trending Shoes Pop-Up\\\\
 \\\centerline{\includegraphics[scale=0.35]{pics/trending_detail.png}}
 \\When the user clicks the image in "Trending now", a pop-up page appears. The pop-up contains the price of shoes and detailed information about shoes.\\\\
 	\item Search Bar \\\\
-\centerline{\includegraphics[scale=0.35]{pics/searchbar.png}}
+\centerline{\includegraphics[scale=0.35]{pics/searchbar.png}}\\\\
 In the middle of the main page, there is a search bar. This search bar allows you to search for shoes based on stockx data. When the user enters a search word, shoes including the search word are displayed on the screen. Like "Trending Now" page, when the user clicks on an image of a shoes, a pop-up page appears with prices and details about the shoes.\\
-	\item Search Shoes Pop-Up\\
+	\item Search Shoes Pop-Up\\\\
 \\\centerline{\includegraphics[scale=0.35]{pics/search_detail.png}}
 \\When the user clicks the image of the shoes in the search result, a pop-up window appears. The pop-up contains the price of shoes and information about shoes. Also, unlike the pop-up of "Trending Now," the user can add the shoes to the user's shoecase on this pop-up page. \\
 	\item Navigation Bar \\
@@ -320,40 +320,41 @@ In the middle of the main page, there is a search bar. This search bar allows yo
 \end{enumerate}
 
 \subsection{My ShoeCase}
-When the user presses the "My Shocase" button on the upper right of "Trending Now" on the main page, it switches to its own Shocase screen. Users can add shoes searched on the Search bar to My shoecase, and the added shoes are displayed on this screen. In My Shocase, you can check the price of registered shoes and check the environment for shoe management, such as the temperature and humidity of the shoecase where the shoes are stored.\\
+When the user presses the "My Shocase" button on the upper right of "Trending Now" on the main page, it switches to its own Shocase screen. Users can add shoes searched on the Search bar to My shoecase, and the added shoes are displayed on this screen. In My Shocase, you can check the price of registered shoes and check the environment for shoe management, such as the temperature and humidity of the shoecase where the shoes are stored.\\\\
 \begin{enumerate}
 	\item Register Shoes\\\\
-To register your shoes in the ShoeCase, you need to use the search bar to search shoes. If the user finds the shoes that the user want to register, the user can register the shoes through click the "Add to my ShoeCase"button in search shoes pop-up. My Shoecase page display the registered shoes.\\
+\\To register your shoes in the ShoeCase, you need to use the search bar to search shoes. If the user finds the shoes that the user want to register, the user can register the shoes through click the "Add to my ShoeCase"button in search shoes pop-up. My Shoecase page display the registered shoes.\\\\
 	
-	\item Registered Shoes Information\\
-\\In "Registered Shoes", registered shoes items can be clicked to display shoe information and real-time resell prices. 
-The information and price of shoes are implemented to be obtained through the KREAM API from the app. 
-Through this, you can create an environment where you can share and brag about information with people who visit the ShoeCase.\\
-	\item Public/Private Setting\\
+	\item Registered Shoes Information\\\\
+\\In "Registered Shoes", registered shoes items can be clicked to display shoe information and real-time resell prices. The shoes information appears with the pop-up page.
+The information and price of shoes are implemented to be obtained through the Stockx data. The shoes registered by the user can be shared with others.\\\\
+	\item Public/Private Setting\\\\
 \\Each item property has a check box where you can set public/private. 
-If the checkbox is marked, it will be disclosed. If it is checked, it will be closed.\\
-	\item The number of Kick\\
+If the checkbox is marked, it will be disclosed. If it is checked, it will be closed.\\\\
+	\item The number of Kick\\\\
 \\Each person's shoes have the ability to press Kick icon. 
 If you press the icon, you can register that user's ShoeCase as a favorite.
-The number of Kick is also calculated, so you can see how many people like it.\\
+The number of Kick is also calculated, so you can see how many people like it.\\\\
 \end{enumerate}
 
 \subsection{Finding Other User}
 \begin{enumerate}
-	\item Search Window\\
-\\Clicking on the magnifying glass icon pops up a search window. The search window consists of a search box and a keyboard.\\
+	\item Search Pop-Up page\\\\
+\\\centerline{\includegraphics[scale=0.35]{pics/finding_user.png}}\\\\
+\\When the user clicks the "Finding Other User" button on the navigation bar at the top of the main page, a pop-up page appears that allows users to search for user names. When the user enters the other user name that the user wants to search in search bar, the user's list corresponding to the word is rendered on the screen.\\\\
 	\item Other user's ShoeCase list\\
-\\If you write down another user's email address or nickname in the search box, the query results will be listed
-Clicking on an individual item in the list takes you to the user's individual ShoeCase page depending on whether that is disclosed or not.\\
+\\If the user type another user's name in the search box, the shoecases results will be listed.
+Clicking on an individual item in the list takes you to the user's individual ShoeCase page depending on whether that is disclosed or not.\\\\
 \end{enumerate}
 
 \subsection{Other user's ShoeCase}
 \begin{enumerate}
 	\item Main ShoeCase Page\\
-\\Similar to my ShoeCase page, virtualize other user's ShoeCase.
-The shoes of another person's ShoeCase found by searching by id are displayed on the screen frame by frame or list. And just below the user id in the upper center, there is a mark indicating the number of kicks and a clicks button that can be pressed. Kicks is a recommended button that you can press when you like someone else's ShoeCase. (similar to a heart on Instagram). The higher the recommended button, the more popular the person's ShoeCase is. And the other person appears in order of the most attached shoes, and the three shoes in order are marked with 1st 2nd 3rd.\\
+\\When the user clicks the other user's name searched in "Finding other user", it goes to the user's Shoecase page. Like the "My ShoeCase" page, the user can see the shoes registered by other user.\\\\
+	\begin{enumerate}
+		\item[-]There is a mark indicating the number of kicks and a "Kick" button that can be pressed. "Kick" is a like button that you can press when you like someone else's ShoeCase. (similar to a heart on Instagram). \\\\
+	\end{enumerate}
 	\item Detailed ShoeCase Page\\
-\\If you click on the shoes you want to see the price change in detail, you can check the information about the shoes. The information about shoes is the name of the shoes, the real-time present price of shoes from the shoe company (ex Nike or Adidas), StockX api, manufacturing year and so on.
-It has a kicks icon for favorites and displays the total number of Kick for that user next to it.\\
+\\If the user click on the shoes the user want to see the information of the shoes, the pop-up page that has the information of shoes appears. The informations about shoes are the name of the shoes, the real-time present price of shoes from Stockx data.\\
 \end{enumerate}
 \end{document}
