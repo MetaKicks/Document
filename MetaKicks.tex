@@ -101,21 +101,34 @@ So we make this service by paying attention to the value of the collection. It c
 \section{Requirement Analysis}
 
 \subsection{Login}
-It supports Google login and Apple login by linking Firebase and React. If the login is successful, you will be taken to the main page.\\
+The user login operate by linking Firebase and React. If the login is successful the user can use their shoecase page.\\
 
 \subsection{Main Page}
-Users can check the functions in the app at once on the main page. \\
+Users can check the functions in the web at once on the main page. \\
 \begin{enumerate}
+    \item Trending Now\\
+    \item Search Shoes\\
     \item My ShoeCase\\
     \item Finding Other User\\
-    \item Favorite ShoeCase\\
+\end{enumerate}
+
+\subsection{Trending Now}
+This part shows some of the trending shoes. If the user clicks on a photo of the products that are on screen, a "Pop-Up" with product details appears.\\\\
+\begin{enumerate}
+\item "Trending now" shows the names and photos of the products currently popular on Stockx, which is the shoes trading site.\\\\
+\item When the user clicks the image in "Trending now", a pop-up page appears. The pop-up contains the price of shoes and detailed information about shoes.\\\\
+\end{enumerate}
+\subsection{Search Shoes}
+This part shows the results of the search shoes. Shoes that match the search word are displayed. If the user clicks on a photo of the products that are on screen, a "Pop-Up" with product details appears.\\\\
+\begin{enumerate}
+\item When the user enters a search word, shoes including the search word are displayed on the screen.\\\\
+\item When the user clicks the image in "Search Shoes", a pop-up page appears. The pop-up contains the price of shoes and detailed information about shoes. And in this pop-up, the user can add shoes to their shoecase.\\\\
 \end{enumerate}
 
 \subsection{My ShoeCase}
-My ShoeCase page visualizes LG Styler ShoeCase on the LG thinQ app. There is no Shoes in the first entry. There is a pop-up page that writes the name or serial number of the ShoeCase product, then a virtual ShoeCases will be created according to the number of rooms and size of the ShoeCase. A user can nickname the user's ShoeCase.
-\\
+My ShoeCase page visualizes LG Styler ShoeCase on the LG thinQ app. When the user add shoes in Search Shoes, then a virtual ShoeCases will be created according to the number of rooms and size of the ShoeCase.\\\\
 \begin{enumerate}
-    \item Register Shoes by Style Code: There is a button for registering shoes in each section of the ShoeCase. When the user clicks the button, a pop-up window appears, and the user can search style code on the shoes site and register the shoes. For NFT shoes, there is an NFT shoe registration button. When you click the button, a pop-up window appears, and if you enter NFT information for the shoes, you will be registered in the virtual shoe closet like normal shoes.
+    \item Register Shoes : The user can add shoes in Search Shoes page. First, the user search shoes, and if the user finds the right shoes, clicks the image and add to my shoecase. Then that shoes add to the user's shoecase.
 \\
     \item Registered Shoes Information: The name and real-time resell price of the shoes displayed on the virtual ShoeCase. When the user clicks the shoes, The product’s site will appear to show the information of shoes linking with the shoes site.
 \\
@@ -127,12 +140,12 @@ My ShoeCase page visualizes LG Styler ShoeCase on the LG thinQ app. There is no 
 
 \subsection{Finding Other User}
 
-Other people's ShoeCase is listed only for those allowed to reveal their ShoeCase. The list displays the user's name and the nickname of the ShoeCase. When the user clicks the name of the person the user wants to see, the page switches to the that person's ShoeCase page.
-\\
+Other people's ShoeCase is listed only for those allowed to reveal their ShoeCase. The list displays the user's name. When the user clicks the name of the person the user wants to see, the page switches to the that person's ShoeCase page.
+\\\\
 \begin{enumerate}
-	\item Search Someone's ShoeCase: You can search the user's nickname and view the published ShoeCase.
+	\item Search Someone's ShoeCase: You can search the user name and view the published ShoeCase.
 \\
-	\item Recommendation: List ShoeCase by number of Kicks. 
+	\item View Shoecase: Like my Shoecase, the user can see the other's shoecase. And when the user clicks the image of shoes, can see the detail of shoes. 
 \\
 \end{enumerate}
 
@@ -188,7 +201,7 @@ The development environment we chose is Windows and Mac. We developed it accordi
 	\hline
         Node.js & Node.js is a software platform used to develop scalable network applications. Node.js utilizes JavaScript as the writing language and has high processing performance through non-blocking I/O and single thread event loops. Node.js has the ease of server expansion and can even write back-end in the required front-end language of JavaScript. Also Node.js has a strong point in services that require processing a huge amount of input output data.\\
 	\hline
-	React-Native & React native is a framework for developing Android and iOS apps using React's grammar. React native also uses Javascript as a programming language, so it has good versatility. Hot Reload and Live Reload of React native allows us to immediately apply the correction and confirm the correction immediately.\\
+	React & React is a Javascript library. React can be used to develop a single page application or a mobile application. React also uses Javascript as a programming language, so it has good versatility. With React, It can be extended to react native.\\
 	\hline
 	\end{tabular}
 \end{table}
@@ -215,10 +228,10 @@ It is a representative free git platform, and a small platform between teams. In
 	\\
 	\centerline{\includegraphics[scale=0.13]{pics/nodejs.png}}\\\\
 Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on a JavaScript Engine (i.e. V8 engine) and executes JavaScript code outside a web browser, which was designed to build scalable network applications. Node.js lets developers use JavaScript to write command line tools and for server-side scripting—running scripts server-side to produce dynamic web page content before the page is sent to the user's web browser.We adopted Node.js as a backend system for developing applications. As for the front end, Node.js was considered suitable because React Native was selected in consideration of the interworking of JavaScript instead of flutter.\\
-	\item{React-Native}\\
+	\item{React}\\
 	\\
-	\centerline{\includegraphics[scale=0.4]{pics/React-Native.png}}\\\\
-React Native is an open-source UI software framework created by Meta Platforms, Inc. It is used to develop applications for Android, Android TV, iOS, macOS, tvOS, Web, Windows and UWP by enabling developers to use the React framework along with native platform capabilities. We adopted reactive native as a front-end system for developing applications. As for the backend, Node.js was selected instead of flask in consideration of the interworking of JavaScript, so I thought react native would be suitable.\\
+	\centerline{\includegraphics[scale=1]{pics/React.png}}\\\\
+React is an open-source UI  Javascript library created by Meta Platforms, Inc. React uses Dirty checking and Virtual DOM to find the DOM element that needs to be updated and only updates that part, so it is possible to perform extremely fast on dynamic modern webs with frequent re-rendering. We adopted reactive as a front-end system for developing applications. As for the backend, Node.js was selected instead of flask in consideration of the interworking of JavaScript, so We thought React would be suitable.\\
 	\item{VScode}\\
 	\\
 	\centerline{\includegraphics[scale=0.05]{pics/VScode.png}}\\\\
@@ -323,7 +336,7 @@ In the middle of the main page, there is a search bar. This search bar allows yo
 When the user presses the "My Shocase" button on the upper right of "Trending Now" on the main page, it switches to its own Shocase screen. Users can add shoes searched on the Search bar to My shoecase, and the added shoes are displayed on this screen. In My Shocase, you can check the price of registered shoes and check the environment for shoe management, such as the temperature and humidity of the shoecase where the shoes are stored.\\\\
 \begin{enumerate}
 	\item Register Shoes\\\\
-\\To register your shoes in the ShoeCase, you need to use the search bar to search shoes. If the user finds the shoes that the user want to register, the user can register the shoes through click the "Add to my ShoeCase"button in search shoes pop-up. My Shoecase page display the registered shoes.\\\\
+\\To register your shoes in the ShoeCase, you need to use the search bar to search shoes. If the user finds the shoes that the user want to register, the user can register the shoes through click the "Add to my ShoeCase" button in search shoes pop-up. My Shoecase page display the registered shoes.\\\\
 	
 	\item Registered Shoes Information\\\\
 \\In "Registered Shoes", registered shoes items can be clicked to display shoe information and real-time resell prices. The shoes information appears with the pop-up page.
@@ -376,8 +389,7 @@ The front end uses ReactJS to naturally switch the web screen using state. We us
 	MetaKicks\_Frontend/\par src/components/ & BrandIcons.js \par FindUserModal.js \par ImgCarousel.js \par MiniCard.js \par NavBar.js \par PriceTable.js \par ProductCard.js \par Products.js \par SearchBar.js \par SignInModal.js \par SignUpModal.js \par Trending.js & MetaKicks\_Frontend\\ \hline
 MetaKicks\_Document/ & MetaKicks.pdf \par MetaKicks.tex \par README.md & MetaKicks\_Document\\ \hline
 \end{tabular}
-\end{table}
-\begin{table}
+
 \begin{tabular}{|p{2.8cm}|p{2.4cm}|p{2.7cm}|}\hline
 	MetaKicks\_Backend/ & index.js \par package.json \par package-lock.json \par README.md \par & MeatKicks\_Backend\\ \hline
 	MetaKicks\_Backend/\par scrapers/ & flightclub-scrape.js \par goat-scraper.js \par stadiumgoods-scraper.js \par stockx-scraper.js & MetaKicks\_Backend\\ \hline
