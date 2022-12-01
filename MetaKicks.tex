@@ -357,4 +357,26 @@ Clicking on an individual item in the list takes you to the user's individual Sh
 	\item Detailed ShoeCase Page\\
 \\If the user click on the shoes the user want to see the information of the shoes, the pop-up page that has the information of shoes appears. The informations about shoes are the name of the shoes, the real-time present price of shoes from Stockx data.\\
 \end{enumerate}
+\section{Arcitecture Design and Implementation}
+\subsection{Overall Architecture}
+\subsection{Directory Organization}
+\begin{table}[h]
+\caption{Directory of MetaKicks}
+\def\arraystretch{1.24} \small
+    \begin{tabular}{|p{2.8cm}|p{2.8cm}|p{3.0cm}|}
+        \hline
+        \textbf{\textit{Directory}} & \textbf{\textit{File Name}} & \textbf{\textit{Repository}} \\ \hline
+        MetaKicks\_Frontend/ & package.json \par package-lock.json \par README.md & MetaKicks\_Frontend\\ \hline
+         
+        MetaKicks\_Frontend/\par src/ \par & App.css \par App.js \par index.css \par index.js \par serviceWorker.js \par 					setupTests.js \par  & MetaKicks\_Frontend\\ \hline
+	
+	MetaKicks\_Frontend/\par src/components/ & BrandIcons.js \par ImgCarousel.js \par MiniCard.js \par NavBar.js \par PriceTable.js \par ProductCard.js \par SearchBar.js \par Trending.js & MetaKicks\_Frontend\\ \hline
+	MetaKicks\_Backend/ & index.js \par package.json \par package-lock.json \par README.md \par & MeatKicks\_Backend\\ \hline
+	MetaKicks\_Backend/\par scrapers/ & flightclub-scrape.js \par goat-scraper.js \par stadiumgoods-scraper.js \par stockx-scraper.js & MetaKicks\_Backend\\ \hline
+	MetaKicks\_Backend/\par routes/ & routes.js & MetaKicks\_Backend\\ \hline
+	MetaKicks\_Backend/\par models & sneaker.js & MetaKicks\_Backend\\ \hline
+	MetaKicks\_Backend/\par controllers & sneaks.controllers.js & MetaKicks\_Backend\\ \hline
+	MetaKicks\_Document/ & MetaKicks.pdf \par MetaKicks.tex \par README.md & MetaKicks\_Document\\ \hline
+	\end{tabular}
+\end{table}
 \end{document}
