@@ -360,6 +360,7 @@ Clicking on an individual item in the list takes you to the user's individual Sh
 \section{Arcitecture Design and Implementation}
 \subsection{Overall Architecture}
 Our MetaKicks site consists of frontend, backend, API, and DB. First, the user registers the shoes in the virtual shoe rack on the frontend page. In this process, users can easily find many kinds of shoes registered on the stockX homepage through API calls through name or style code search. Once you have found the shoes, press the heart button to complete the registration in the database.\\
+The front end uses ReactJS to naturally switch the web screen using state. We used Express.js to facilitate the connection with MongoDB, the database we use, and applied stockX API to build a project that calls API when the client requests it from the server.\\
 \subsection{Directory Organization}
 \begin{table}[h]
 \caption{Directory of MetaKicks}
