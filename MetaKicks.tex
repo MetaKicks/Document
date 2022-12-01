@@ -359,13 +359,14 @@ Clicking on an individual item in the list takes you to the user's individual Sh
 \end{enumerate}
 \section{Arcitecture Design and Implementation}
 \subsection{Overall Architecture}
+\centerline{\includegraphics[scale=0.2]{pics/service_construct.png}}
 Our MetaKicks site consists of frontend, backend, API, and DB. First, the user registers the shoes in the virtual shoe rack on the frontend page. In this process, users can easily find many kinds of shoes registered on the stockX homepage through API calls through name or style code search. Once you have found the shoes, press the heart button to complete the registration in the database.\\
 The front end uses ReactJS to naturally switch the web screen using state. We used Express.js to facilitate the connection with MongoDB, the database we use, and applied stockX API to build a project that calls API when the client requests it from the server.\\
 \subsection{Directory Organization}
 \begin{table}[h]
 \caption{Directory of MetaKicks}
 \def\arraystretch{1.24} \small
-    \begin{tabular}{|p{2.8cm}|p{2.8cm}|p{3.0cm}|}
+    \begin{tabular}{|p{2.8cm}|p{2.4cm}|p{2.7cm}|}
         \hline
         \textbf{\textit{Directory}} & \textbf{\textit{File Name}} & \textbf{\textit{Repository}} \\ \hline
         MetaKicks\_Frontend/ & package.json \par package-lock.json \par README.md & MetaKicks\_Frontend\\ \hline
@@ -376,9 +377,57 @@ The front end uses ReactJS to naturally switch the web screen using state. We us
 	MetaKicks\_Backend/ & index.js \par package.json \par package-lock.json \par README.md \par & MeatKicks\_Backend\\ \hline
 	MetaKicks\_Backend/\par scrapers/ & flightclub-scrape.js \par goat-scraper.js \par stadiumgoods-scraper.js \par stockx-scraper.js & MetaKicks\_Backend\\ \hline
 	MetaKicks\_Backend/\par routes/ & routes.js & MetaKicks\_Backend\\ \hline
-	MetaKicks\_Backend/\par models & sneaker.js & MetaKicks\_Backend\\ \hline
-	MetaKicks\_Backend/\par controllers & sneaks.controllers.js & MetaKicks\_Backend\\ \hline
+	MetaKicks\_Backend/\par models & Metakicks.js & MetaKicks\_Backend\\ \hline
+	MetaKicks\_Backend/\par controllers & Metakicks.controllers.js & MetaKicks\_Backend\\ \hline
 	MetaKicks\_Document/ & MetaKicks.pdf \par MetaKicks.tex \par README.md & MetaKicks\_Document\\ \hline
 	\end{tabular}
 \end{table}
+\subsection{Module 1 : Front End}
+\begin{enumerate}
+\item Purpose\\
+\\\\To develop Metakicks, a platform where the user can see the uesr's and the other's shoecase on the web, we used React, a web framework developed through Javascript language. Since Metakciks is powered on the web, it can be accessed by url without a separate installation. React uses Dirty checking and Virtual DOM to find the DOM element that needs to be updated and only updates that part, so it is possible to perform fast on dynamic webs with frequent re-rendering. Metakicks used React because it is a web that renders only the part without changing the entire page when changing the screen. Also, there is the other advantage. Since React uses javascripts such as node.js and express.js, it has the advantage of using javascript for front-end and back-end development. If the developer knows Javascript, the developer can develop front-end and back-end. Therefore React was adopted as a front-end development environment to enhance the efficiency and develop more efficiently.\\\\
+\item Functionality\\
+\\\\Metakicks's front-end made with React requests existing JSON file in the database via the backend server to show the users their own shoecase and the other's shoecase. And the information received from the user is delivered to the back-end server and database. With front-end of Metakicks, the user can give their information to the back-end/database and the user can see the data from database with graphic rendering as well as the LG ShoeCase system. Users can get a better experience for Metakicks and LG from innovative idea of Metakicks.\\\\
+\item Location of Source Code\\
+: MetaKicks\_Frontend/\\\\
+\item Class Components\\
+	\begin{enumerate}
+		\item[-] src/App.js\\\\
+		If the user clicks this "About" button, it goes to the detailed description of this web.\\
+	\end{enumerate}
+\item Where it's taken from\\
+
+\item How and Why We Used It\\
+
+\end{enumerate}
+\subsection{Module 2 : Back End}
+\begin{enumerate}
+\item Purpose\\
+
+\item Functionality\\
+
+\item Location of Source Code\\
+
+\item Class Components\\
+
+\item Where it's taken from\\
+
+\item How and Why We Used It\\
+
+\end{enumerate}
+\subsection{Module 3 : Database}
+\begin{enumerate}
+\item Purpose\\
+
+\item Functionality\\
+
+\item Location of Source Code\\
+
+\item Class Components\\
+
+\item Where it's taken from\\
+
+\item How and Why We Used It\\
+
+\end{enumerate}
 \end{document}
