@@ -373,7 +373,7 @@ The front end uses ReactJS to naturally switch the web screen using state. We us
          
         MetaKicks\_Frontend/\par src/ \par & App.css \par App.js \par index.css \par index.js \par serviceWorker.js \par 					setupTests.js \par  & MetaKicks\_Frontend\\ \hline
 	
-	MetaKicks\_Frontend/\par src/components/ & BrandIcons.js \par ImgCarousel.js \par MiniCard.js \par NavBar.js \par PriceTable.js \par ProductCard.js \par SearchBar.js \par Trending.js & MetaKicks\_Frontend\\ \hline
+	MetaKicks\_Frontend/\par src/components/ & BrandIcons.js \par FindUserModal.js \par ImgCarousel.js \par MiniCard.js \par NavBar.js \par PriceTable.js \par ProductCard.js \par Products.js \par SearchBar.js \par SignInModal.js \par SignUpModal.js \par Trending.js & MetaKicks\_Frontend\\ \hline
 	MetaKicks\_Backend/ & index.js \par package.json \par package-lock.json \par README.md \par & MeatKicks\_Backend\\ \hline
 	MetaKicks\_Backend/\par scrapers/ & flightclub-scrape.js \par goat-scraper.js \par stadiumgoods-scraper.js \par stockx-scraper.js & MetaKicks\_Backend\\ \hline
 	MetaKicks\_Backend/\par routes/ & routes.js & MetaKicks\_Backend\\ \hline
@@ -393,7 +393,23 @@ The front end uses ReactJS to naturally switch the web screen using state. We us
 \item Class Components\\
 	\begin{enumerate}
 		\item[-] src/App.js\\\\
-		If the user clicks this "About" button, it goes to the detailed description of this web.\\
+		This is the main frame of the main page. This routes to trending now and search result.\\
+	\end{enumerate}
+	\begin{enumerate}
+		\item[-] src/Trending.js\\\\
+		Trending screen show the list of products to the screen.Trending screen gets stockX data by requesting to the back-end.\\
+	\end{enumerate}
+	\begin{enumerate}
+		\item[-] src/Products.js\\\\
+		Products screen show the list of products of seach result. Products screen gets stockX data by requesting to the back-end.\\
+	\end{enumerate}
+	\begin{enumerate}
+		\item[-] src/Minicard.js\\\\
+		Minicard.js turns the list of products into graphic product card.\\
+	\end{enumerate}
+	\begin{enumerate}
+		\item[-] src/ProductCard.js\\\\
+		Product Card screen show the detail information and price of shoes.Product Card screen gets stockX data by requesting to the back-end. \\
 	\end{enumerate}
 \item Where it's taken from\\
 
