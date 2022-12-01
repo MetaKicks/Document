@@ -418,36 +418,51 @@ MetaKicks\_Document/ & MetaKicks.pdf \par MetaKicks.tex \par README.md & MetaKic
 \item Where it's taken from\\
 \\\\JavaScript is an object-based script programming language. This language is mainly used within a web browser and has the ability to access embedded objects from other applications. Microsoft visual studio code is distributed free of charge. Therefore, it can be easily downloaded and updated. In Visual Studio Code, the user can write html, css, javacript code. Visual studio Code supports IDE(Various integrated development environments) and text editor. In addition, many modules with javascript can be easily installed through node.js. Installing node.js also easy. Node.js is also free program, so can be easily installed and updated. React is a javascript library, therefore with node.js, React program can be started.\\\\
 \item How and Why We Used It\\
-
+\\\\React is one of the JavaScript libraries used to create a user interface. React uses Dirty checking and Virtual DOM to find the DOM element that needs to be updated and only updates that part, so it is possible to perform fast on dynamic webs with frequent re-rendering. Metakicks' web renders only the part to be replaced on the main page without switching the screen so It is efficient to utilize React optimized for dynamic webs. React also use the Javacript as the programming language, so there is less pressure to study another programming language. The fact that the front-end programming language and the back-end programming language are the same gives developers great convenience. So Metakicks has unified front-end and back-end programming language to Javascript by using React.
 \end{enumerate}
 \subsection{Module 2 : Back End}
 \begin{enumerate}
 \item Purpose\\
-
+\\\\Node.js is a platform that combines Chrome V8, an open-source JavaScript engine, with libuv, an asynchronous event processing library. In other words, Node.js is a runtime environment that allows JavaScript to execute code, such as building a server outside a browser. With Node.js, the user can easily set the HTTP web server. In Node.js, a package manager called npm is available. The Node Package Manager (npm) is a package manager for JavaScript programming languages. With using npm, this makes it easy to install numerous packages. Express.js is a web framework based on the core modules of Node.js, http and Connect components. Express.js helps developers quickly and easily develop with Node.js. Middleware with various functions written in JavaScript code can be used by combining Express with only what developers need. Metakicks use Express.js as a server framework since Metakicks use Node.js as back-end environment. In addition, through node.js and express.js, mongodb can be the database of Metakicks because it supports the Node.js.\\\\
 \item Functionality\\
-
+\\\\Node.js includes a built-in HTTP server library, which allows the web server to operate without separate software such as Apache, allowing more control over the behavior of the web server. So we run the server through Node.js. The web framework was constructed light and flexible using express.js. In addition,mongoose are used to connect express.js and mongodb. Although Mongodb is a Nosql, database, schema can perform the same role as the sql's table through schema settings in mongoose. The shape of the data can set using the schema.\\\\
 \item Location of Source Code\\
-
+: MetaKicks\_Backend/\\\\
 \item Class Components\\
-
+	\begin{enumerate}
+		\item[-] routes/routes.js\\\\
+		route.js is a frame that defines the form for each url of the web.\\
+	\end{enumerate}
+	\begin{enumerate}
+		\item[-] models/Metakicks.js\\\\
+		Metakicks.js is the schema of the data. This set the schema of the mongodb data using mongoose.\\
+	\end{enumerate}
+	\begin{enumerate}
+		\item[-] controllers/Metakicks.controllers.js\\\\
+		Metakicks.controllers.js controlls the data of shoes from shoes site. \\
+	\end{enumerate}
+	\begin{enumerate}
+		\item[-] scrapers/*\\\\
+		This files scrape the data of shoes from other sites. The data are obtained in Json file format. \\
+	\end{enumerate}
 \item Where it's taken from\\
-
+\\\\Javascript is available through the installation of visual studio code. Microsoft visual studio code is distributed free of charge, making it easy to access. Like visual studio code, node.js are also distributed free of charge. Node.js installation can be confirmed through the terminal of the visual studio code or from the command prompt, and if node.js installation is completed, express.js can be installed through npm. In addition, a javascript library called mongoose is required to connect express.js and mongodb. Mongoose can also be installed at npm of node.js.\\\\
 \item How and Why We Used It\\
-
+\\\\In the case of Node.js, since it is Javascript-based which is the most popular web programming language, many open-source modules and apis are available. Express.js is the web framework based on Node.js core modules. It has a great advantage on routing the web. With using express.js, we can easily controll the routing of web and organize web frameworks light and flexible. The middleware of various functions written in JavaScript code can be used in combination with Express by the developer selecting only what is needed. Javascript is the most famous web programming language and node.js and express.js use javascript so there are many community used by experts and senior programmers. We could take the advantage of strong community of popular programming language. Both front-end and back-end tools used the same programming language (javascript), so it was useful to communicate with each other. In addition, Metakicks took stockX's API because it had to get details such as shoe information and price from stockX, an external site.\\\\
 \end{enumerate}
 \subsection{Module 3 : Database}
 \begin{enumerate}
 \item Purpose\\
-
+\\\\MongoDB is an open-source, document-oriented cross-platform database written in C++, with outstanding scalability and performance. It also maintains the top recognition among existing NoSQL databases. Metakicks used mongodb because it had data on personal shoecase for each user and had to be easy to expand the data. MongoDB also facilitates the use of json files because it uses dynamic schema-type documents in the form of JSON instead of a fixed structure with a schema such as MySQL's table. MongoDB Atlas is a cloud database that manages everything created by the architects of MongoDB. AWS, Azure, and GCP provide integrated management of everything related to deployment. With Mongodb Atlas, we can distribute the database easily. MongoDB Atlas also has a free version that can read and modify data in real time because it is a cloud system.\\\\
 \item Functionality\\
-
+\\\\MongoDB is Nosql, but schema can be set using Mongoose. Shema serves as a table for sql. We set the schema with mongoose and back-end request Json file of the user's shoecase, and import the user's showcase information from the mongodb database in Json file. By using the Mongodb Atlas, real-time communication between the front-end, back-end and database can be possible. By using free version, it allows users to give their information such as adding shoes in their shoecase and back-end server can receive those data. So user finally can see the rendered graphics of their shoecase. \\\\
 \item Location of Source Code\\
-
+: MetaKicks\_Backend/\\\\
 \item Class Components\\
 
 \item Where it's taken from\\
-
+\\\\MongoDB is a cross-platform document-oriented database system classified as NoSQL announced in 2009. Mongodb is being used in places such as Washington Post and Kakao Talk, which have a lot of data expansion and transformation. It is not a traditional table-relationship-based RDBMS like MySQL and does not use SQL. Mongodb uses a dynamic schema-type document in the form of JSON instead of a fixed schema-like structure, such as a table in MySQL. Mongodb can be downloaded free of charge from the Internet. Apart from installing mongodb, in order to use mongodb in node.js, the mongodb module must be installed using npm. Mongodb Atlas is a multi-cloud database service by the same people building MongoDB. Atlas simplifies database deployment and management while providing the diversity needed to deploy resilient, high-performance global applications from selected cloud providers. Originally, other programs are needed for distribution, but data management and distribution can be easily solved through mongodb atlas.\\\\
 \item How and Why We Used It\\
-
+\\\\There are SQL and NoSQL in the database, and choosing between them was not an easy decision. However, by using React as the front-end and node.js as the back-end, we decided to use Mongodb, which is easy to access as node.js as the database. Mongodb can be managed by Javascript through express.js and mongoose, which was in line with our intention to develop the front-end and back-end as javascript. Mongodb is Nosql, but metakicks has a fixed data format called shoecase for each user. Therefore, data with a format was stored through a schema that determines the form, such as the table of sql, through mongoose. We was worried about the distribution of the database, but fortunately, Mongodbatlas in Mongodb was a cloud that distributed, enabling real-time database management.\\\\
 \end{enumerate}
 \end{document}
