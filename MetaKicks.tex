@@ -475,6 +475,36 @@ MetaKicks\_Document/ & MetaKicks.pdf \par MetaKicks.tex \par README.md & MetaKic
 \item Where it's taken from\\
 \\\\MongoDB is a cross-platform document-oriented database system classified as NoSQL announced in 2009. Mongodb is being used in places such as Washington Post and Kakao Talk, which have a lot of data expansion and transformation. It is not a traditional table-relationship-based RDBMS like MySQL and does not use SQL. Mongodb uses a dynamic schema-type document in the form of JSON instead of a fixed schema-like structure, such as a table in MySQL. Mongodb can be downloaded free of charge from the Internet. Apart from installing mongodb, in order to use mongodb in node.js, the mongodb module must be installed using npm. Mongodb Atlas is a multi-cloud database service by the same people building MongoDB. Atlas simplifies database deployment and management while providing the diversity needed to deploy resilient, high-performance global applications from selected cloud providers. Originally, other programs are needed for distribution, but data management and distribution can be easily solved through mongodb atlas.\\\\
 \item How and Why We Used It\\
+<<<<<<< Updated upstream
 \\\\There are SQL and NoSQL in the database, and choosing between them was not an easy decision. However, by using React as the front-end and node.js as the back-end, we decided to use Mongodb, which is easy to access as node.js as the database. Mongodb can be managed by Javascript through express.js and mongoose, which was in line with our intention to develop the front-end and back-end as javascript. Mongodb is Nosql, but metakicks has a fixed data format called shoecase for each user. Therefore, data with a format was stored through a schema that determines the form, such as the table of sql, through mongoose. We was worried about the distribution of the database, but fortunately, Mongodbatlas in Mongodb was a cloud that distributed, enabling real-time database management.\\\\
+=======
+\section{use cases}
+\subsection{How to use}
+MetaKicks is a shoe search and data virtualization site for shoe collectors. To use the function, you need to know the style code or name of the shoes. For the style code of the shoes, you can use the code printed on the inside of the shoes or the name on the web at the time of delivery. Since it's getting data from StockX, the style code or shoe name is usually almost common. And each user must be given their own shoe rack, so membership registration is required. You can easily sign up and log in from the top bar of the main page.\\
+\subsection{Entering the website}
+When you first access MetaKicks, you first see the main page with LG Shoe Styler in the background. The main page consists of a top bar, a search window, and mini cards that show what is currently trendy.\\
+\begin{enumerate}
+\item[-]Top bar\\
+The top bar includes About buttons to access MetaKicks Github, Home buttons to return to the main page, buttons to log in and sign up, and a search window to search for other users.\\
+\item[-]Search window\\
+The search window allows you to enter a name or style code for your shoes. When you search, you will list the shoes you have searched under the search window based on the shoes on the StockX site. When you click on each shoe, you'll see the details of the shoe and the price information by size. You can also click the Add button to add it to your shoe rack.\\
+\item[-]Mini cards\\
+The mini card has the image, price information, and product name of the shoes. You can see simple information on the mini card, and when you click on the mini card, you will see detailed information on shoes and price information by size. All information will appear on a StockX basis because it receives data from StockX. In addition, the mini-card pop-up window will have an additional button that will allow you to add shoes to your own Shoecase.\\
+\end{enumerate}
+
+\subsection{Login \& Sign-up}
+\begin{enumerate}
+\item[-]Login
+When you click the login button, you will see a pop-up window where you enter your email address and password. When you log in, the My Shocase button is activated to view your shoe closet. To use this feature, you must be a member of MetaKicks.\\
+\item[-]Sign-up
+Press the Sign-up button to enter the email address and password you want to use. Membership registration is necessary to create a unique shoecase. If you enter the information necessary for membership registration, the information will be sent to MetaKicks' database to complete the registration.
+\end{enumerate}
+\subsection{Searching by name \& Style code}
+\subsection{Clicking product card}
+\subsection{Trending}
+\subsection{My Shoecase}
+
+
+>>>>>>> Stashed changes
 \end{enumerate}
 \end{document}
