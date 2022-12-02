@@ -475,7 +475,6 @@ MetaKicks\_Document/ & MetaKicks.pdf \par MetaKicks.tex \par README.md & MetaKic
 \item Where it's taken from\\
 \\\\MongoDB is a cross-platform document-oriented database system classified as NoSQL announced in 2009. Mongodb is being used in places such as Washington Post and Kakao Talk, which have a lot of data expansion and transformation. It is not a traditional table-relationship-based RDBMS like MySQL and does not use SQL. Mongodb uses a dynamic schema-type document in the form of JSON instead of a fixed schema-like structure, such as a table in MySQL. Mongodb can be downloaded free of charge from the Internet. Apart from installing mongodb, in order to use mongodb in node.js, the mongodb module must be installed using npm. Mongodb Atlas is a multi-cloud database service by the same people building MongoDB. Atlas simplifies database deployment and management while providing the diversity needed to deploy resilient, high-performance global applications from selected cloud providers. Originally, other programs are needed for distribution, but data management and distribution can be easily solved through mongodb atlas.\\\\
 \item How and Why We Used It\\
-<<<<<<< Updated upstream
 \\\\There are SQL and NoSQL in the database, and choosing between them was not an easy decision. However, by using React as the front-end and node.js as the back-end, we decided to use Mongodb, which is easy to access as node.js as the database. Mongodb can be managed by Javascript through express.js and mongoose, which was in line with our intention to develop the front-end and back-end as javascript. Mongodb is Nosql, but metakicks has a fixed data format called shoecase for each user. Therefore, data with a format was stored through a schema that determines the form, such as the table of sql, through mongoose. We was worried about the distribution of the database, but fortunately, Mongodbatlas in Mongodb was a cloud that distributed, enabling real-time database management.\\\\
 =======
 \section{use cases}
@@ -497,14 +496,16 @@ The mini card has the image, price information, and product name of the shoes. Y
 \item[-]Login
 When you click the login button, you will see a pop-up window where you enter your email address and password. When you log in, the My Shocase button is activated to view your shoe closet. To use this feature, you must be a member of MetaKicks.\\
 \item[-]Sign-up
-Press the Sign-up button to enter the email address and password you want to use. Membership registration is necessary to create a unique shoecase. If you enter the information necessary for membership registration, the information will be sent to MetaKicks' database to complete the registration.
+Press the Sign-up button to enter the email address and password you want to use. Membership registration is necessary to create a unique shoecase. If you enter the information necessary for membership registration, the information will be sent to MetaKicks' database to complete the registration.\\
 \end{enumerate}
 \subsection{Searching by name \& Style code}
+\centerline{\includegraphics[scale=2]{pics/Nike_Stylecode.jpg}}
+As you can see in the picture above, the style code for each shoe can be found in the shoe information printed inside the shoe. This picture is Nike's AQ3366-601 model. Alternatively, if you know the name of the shoe, you can search for shoes with keywords by searching in the search box.\\
 \subsection{Clicking product card}
+If you search for shoes or look at the latest trendy items on the main menu, brief information about shoes will be displayed on the mini-card. The mini card has pictures of shoes and simple price information. These items are clickable and can interact with the user at the front end.\\
 \subsection{Trending}
+When you see the main menu for the first time, a window called Trending Now appears. In that window, you can get the product information of the shoes from StockX that we use and search for it, and you can see many mini cards. Just like this, users can interact with shoe products, and the information that appears when you click on this window is the same. If you have any shoes you like here, you can add them to your own Shoecase.\\
 \subsection{My Shoecase}
-
-
->>>>>>> Stashed changes
+In the My Shocase menu, you can look at the items of shoes you have registered. The shoes registered through the Add button on the mini card will appear by item. You can also search for other people's ShoCase, or you can search for My ShoCase.
 \end{enumerate}
 \end{document}
