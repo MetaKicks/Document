@@ -352,21 +352,18 @@ The number of Kick is also calculated, so you can see how many people like it.\\
 
 \subsection{Finding Other User}
 \begin{enumerate}
-	\item Search Pop-Up page\\\\
+	\item Search other user\\\\
 \\\centerline{\includegraphics[scale=0.35]{pics/finding_user.png}}\\\\
-\\When the user clicks the "Finding Other User" button on the navigation bar at the top of the main page, a pop-up page appears that allows users to search for user names. When the user enters the other user name that the user wants to search in search bar, the user's list corresponding to the word is rendered on the screen.\\\\
-	\item Other user's ShoeCase list\\
-\\If the user type another user's name in the search box, the shoecases results will be listed.
-Clicking on an individual item in the list takes you to the user's individual ShoeCase page depending on whether that is disclosed or not.\\\\
+\\When the user type the name of other user on the top of the website, the result of the other user list appears.\\\\
+	\item Search other user list\\
+\\The other user lists on the screen. If the user clicks the other user's name on the screen, the user can see the other user's shoecase.\\\\
 \end{enumerate}
 
 \subsection{Other user's ShoeCase}
 \begin{enumerate}
 	\item Main ShoeCase Page\\
 \\When the user clicks the other user's name searched in "Finding other user", it goes to the user's Shoecase page. Like the "My ShoeCase" page, the user can see the shoes registered by other user.\\\\
-	\begin{enumerate}
-		\item[-]There is a mark indicating the number of kicks and a "Kick" button that can be pressed. "Kick" is a like button that you can press when you like someone else's ShoeCase. (similar to a heart on Instagram). \\\\
-	\end{enumerate}
+
 	\item Detailed ShoeCase Page\\
 \\If the user click on the shoes the user want to see the information of the shoes, the pop-up page that has the information of shoes appears. The informations about shoes are the name of the shoes, the real-time present price of shoes from Stockx data.\\
 \end{enumerate}
@@ -479,14 +476,14 @@ MetaKicks\_Document/ & MetaKicks.pdf \par MetaKicks.tex \par README.md & MetaKic
 =======
 \section{use cases}
 \subsection{How to use}
-MetaKicks is a shoe search and data virtualization site for shoe collectors. To use the function, you need to know the style code or name of the shoes. For the style code of the shoes, you can use the code printed on the inside of the shoes or the name on the web at the time of delivery. Since it's getting data from StockX, the style code or shoe name is usually almost common. And each user must be given their own shoe rack, so membership registration is required. You can easily sign up and log in from the top bar of the main page.\\
+MetaKicks is a shoe search and data virtualization site for shoe collectors. To use the function, you need to know the style code or name of the shoes. For the style code of the shoes, you can use the code printed on the inside of the shoes or the name on the web at the time of delivery. Since it's getting data from StockX, the style code or shoe name is usually almost common. And each user must be given their own shoecase, so membership registration is required. You can easily sign up and log in from the top bar of the main page.\\
 \subsection{Entering the website}
 When you first access MetaKicks, you first see the main page with LG Shoe Styler in the background. The main page consists of a top bar, a search window, and mini cards that show what is currently trendy.\\
 \begin{enumerate}
 \item[-]Top bar\\
-The top bar includes About buttons to access MetaKicks Github, Home buttons to return to the main page, buttons to log in and sign up, and a search window to search for other users.\\
-\item[-]Search window\\
-The search window allows you to enter a name or style code for your shoes. When you search, you will list the shoes you have searched under the search window based on the shoes on the StockX site. When you click on each shoe, you'll see the details of the shoe and the price information by size. You can also click the Add button to add it to your shoe rack.\\
+The top bar includes  Home buttons to return to the main page, buttons to log in and sign up, and a search bar to search for other users.\\
+\item[-]Search bar\\
+The search bar allows you to enter a name or style code for your shoes. When you search, you will list the shoes you have searched under the search window based on the shoes on the StockX site. When you click on each shoe, you'll see the details of the shoe and the price information by size. You can also click the Add button to add it to your shoecase.\\
 \item[-]Mini cards\\
 The mini card has the image, price information, and product name of the shoes. You can see simple information on the mini card, and when you click on the mini card, you will see detailed information on shoes and price information by size. All information will appear on a StockX basis because it receives data from StockX. In addition, the mini-card pop-up window will have an additional button that will allow you to add shoes to your own Shoecase.\\
 \end{enumerate}
@@ -494,18 +491,22 @@ The mini card has the image, price information, and product name of the shoes. Y
 \subsection{Login \& Sign-up}
 \begin{enumerate}
 \item[-]Login
-When you click the login button, you will see a pop-up window where you enter your email address and password. When you log in, the My Shocase button is activated to view your shoe closet. To use this feature, you must be a member of MetaKicks.\\
+When you click the login button, you will see a pop-up window where you enter your email address and password. When you log in, the My Shocase button is activated to view your shoecase. To use this feature, you must be a member of MetaKicks.\\
 \item[-]Sign-up
-Press the Sign-up button to enter the email address and password you want to use. Membership registration is necessary to create a unique shoecase. If you enter the information necessary for membership registration, the information will be sent to MetaKicks' database to complete the registration.\\
+Press the Sign-up button to enter the email address and password you want to use. Membership registration is necessary to create a unique shoecase. If you enter the information necessary for membership registration, the information will be sent to MetaKicks' database to complete the registration.\\\\
 \end{enumerate}
 \subsection{Searching by name \& Style code}
 \centerline{\includegraphics[scale=2]{pics/Nike_Stylecode.jpg}}
-As you can see in the picture above, the style code for each shoe can be found in the shoe information printed inside the shoe. This picture is Nike's AQ3366-601 model. Alternatively, if you know the name of the shoe, you can search for shoes with keywords by searching in the search box.\\
-\subsection{Clicking product card}
-If you search for shoes or look at the latest trendy items on the main menu, brief information about shoes will be displayed on the mini-card. The mini card has pictures of shoes and simple price information. These items are clickable and can interact with the user at the front end.\\
+As you can see in the picture above, the style code for each shoe can be found in the shoe information printed inside the shoe. This picture is Nike's AQ3366-601 model. Alternatively, if you know the name of the shoe, you can search for shoes with keywords by searching in the search box.\\\\
+\subsection{Shoes detail information}
+If you search for shoes or look at the latest trendy items on the main menu, brief information about shoes will be displayed on the mini-card. The mini card has pictures of shoes and simple price information. These items are clickable and can interact with the user at the front end.\\\\
 \subsection{Trending}
-When you see the main menu for the first time, a window called Trending Now appears. In that window, you can get the product information of the shoes from StockX that we use and search for it, and you can see many mini cards. Just like this, users can interact with shoe products, and the information that appears when you click on this window is the same. If you have any shoes you like here, you can add them to your own Shoecase.\\
+When you see the main menu for the first time, a window called Trending Now appears. In that window, you can get the product information of the shoes from StockX that we use and search for it, and you can see many mini cards. Just like this, users can interact with shoe products, and the information that appears when you click on this window is the same. If you have any shoes you like here, you can add them to your own Shoecase.\\\\
 \subsection{My Shoecase}
 In the My Shocase menu, you can look at the items of shoes you have registered. The shoes registered through the Add button on the mini card will appear by item. You can also search for other people's ShoCase, or you can search for My ShoCase.
+\subsection{Finding Other User}
+If the user want to see the other user's shoecase, the user can type the other user's name on the top of website. The result user list will be appear on the web. To see the user's shoecase, the user can clicks the other user's name and can see the shoecase.\\\\
+\subsection{Other user's shoecase}
+When the user clicks the other user's name on the Finding Other User page, the shoecase of the other user will appear.
 \end{enumerate}
 \end{document}
