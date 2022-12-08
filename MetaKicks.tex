@@ -309,7 +309,7 @@ In the middle of the main page, there is a search bar. This search bar allows yo
 \centerline{\includegraphics[scale=0.24]{pics/search_screen.png}}\\\\
 When the user types the search word on Search Bar, the shoes corresponding to the search word are appear.\\
 	\item Search Shoes Pop-Up\\\\
-\\\centerline{\includegraphics[scale=0.35]{pics/search_detail.png}}
+\\\centerline{\includegraphics[scale=0.35]{pics/shoes_register.png}}
 \\When the user clicks the image of the shoes in the search result, a pop-up window appears. The pop-up contains the price of shoes and information about shoes. Also, unlike the pop-up of "My ShoeCase," the user can add the shoes to the user's shoecase on this pop-up page. \\
 	\item Navigation Bar \\
 \centerline{\includegraphics[scale=0.35]{pics/nav_bar.png}}
@@ -370,6 +370,7 @@ The number of Kick is also calculated, so you can see how many people like it.\\
 \\When the user clicks the other user's name searched in "Finding other user", it goes to the user's Shoecase page. Like the "My ShoeCase" page, the user can see the shoes registered by other user.\\\\
 
 	\item Detailed ShoeCase Page\\
+\\\\\centerline{\includegraphics[scale=0.35]{pics/user_shoe_detail.png}}\\
 \\If the user click on the shoes the user want to see the information of the shoes, the pop-up page that has the information of shoes appears. The informations about shoes are the name of the shoes, the real-time present price of shoes from Stockx data.\\
 \end{enumerate}
 \section{Arcitecture Design and Implementation}
@@ -397,7 +398,8 @@ MetaKicks\_Document/ & MetaKicks.pdf \par MetaKicks.tex \par README.md & MetaKic
 	MetaKicks\_Backend/\par scrapers/ & flightclub-scrape.js \par goat-scraper.js \par stadiumgoods-scraper.js \par stockx-scraper.js & MetaKicks\_Backend\\ \hline
 	MetaKicks\_Backend/\par routes/ & routes.js & MetaKicks\_Backend\\ \hline
 	MetaKicks\_Backend/\par models & Metakicks.js & MetaKicks\_Backend\\ \hline
-	MetaKicks\_Backend/\par controllers & Metakicks.controllers.js & MetaKicks\_Backend\\ \hline
+	MetaKicks\_Backend/\par controllers & Metakicks. \par controllers.js & MetaKicks\_Backend\\ \hline
+	MetaKicks\_database/db & MyShoeCase.json \par jiyun.json & MetaKicks\_database\\ \hline
 	\end{tabular}
 \end{table}
 \subsection{Module 1 : Front End}
@@ -473,7 +475,10 @@ MetaKicks\_Document/ & MetaKicks.pdf \par MetaKicks.tex \par README.md & MetaKic
 \item Location of Source Code\\
 : MetaKicks\_Backend/\\\\
 \item Class Components\\
-
+	\begin{enumerate}
+		\item[-]MetaKicks\_database/db \\\\
+		In database, there are myshoecase and other user's shoecase information json file\\
+	\end{enumerate}
 \item Where it's taken from\\
 \\\\MongoDB is a cross-platform document-oriented database system classified as NoSQL announced in 2009. Mongodb is being used in places such as Washington Post and Kakao Talk, which have a lot of data expansion and transformation. It is not a traditional table-relationship-based RDBMS like MySQL and does not use SQL. Mongodb uses a dynamic schema-type document in the form of JSON instead of a fixed schema-like structure, such as a table in MySQL. Mongodb can be downloaded free of charge from the Internet. Apart from installing mongodb, in order to use mongodb in node.js, the mongodb module must be installed using npm. Mongodb Atlas is a multi-cloud database service by the same people building MongoDB. Atlas simplifies database deployment and management while providing the diversity needed to deploy resilient, high-performance global applications from selected cloud providers. Originally, other programs are needed for distribution, but data management and distribution can be easily solved through mongodb atlas.\\\\
 \item How and Why We Used It\\
