@@ -272,15 +272,15 @@ Express.js is a web framework based on the core modules of Node.js, http and Con
 
 \subsection{Main Page}
 \centerline{\includegraphics[scale=0.3]{pics/main_page.png}}
-If you go to the Metakicks homepage, the main page appears. At the center of the main page, there is the name of  the Metakicks and at the bottom there is the search bar. On the main page, there is "Trending Now" block, which shows the current trendy products based on the stockx site. When a user presses the shoe image, a detailed description of the shoe is provided. In the upper right corner of "Trending Now", there is a button to "My ShoeCase", and when you click the button, it shows the user's shoecase. The Searchbar in the center of the page allows you to search for other shoes based on stockx data, and when you want to add the shoes to your shoecase, you can use the searchbar to find shoes and add them to your shoecase. The navigation bar at the top of the main page has buttons to login, register, search other user.\\\\
+If you go to the Metakicks homepage, the main page appears. At the center of the main page, there is the name of  the Metakicks and at the bottom there is the search bar. On the main page, there is "Trending Now" block, which shows the current trendy products based on the stockx site. When a user presses the shoe image, a detailed description of the shoe is provided. In the upper right corner of "Trending Now", there is a button to "My ShoeCase", and when you click the button, it shows the user's shoecase. The Searchbar in the center of the page allows you to search for other shoes based on stockx data, and when you want to add the shoes to your shoecase, you can use the searchbar to find shoes and add them to your shoecase. The navigation bar at the top of the main page has buttons to login, register, search bar to search other user.\\\\
 \begin{enumerate}
 \item{Login}
-\\\\\centerline{\includegraphics[scale=0.6]{pics/login.png}}
+\\\\\centerline{\includegraphics[scale=0.4]{pics/login.png}}
 \\\\When the user presses the login button at the top of the main page, the login pop-up page appears. When the user enters the user's email and password, the login is successful.\\
 \item{Login failure}\\
-\\If the user failed to login Google/Apple or get error, a pop-up will appear to user. The message of the pop-up is “Error occurred while you log in. Please log in again.”. When the user clicks “confirm button”, pop-up disappear and back to login page.\\\\
+\\If the user failed to login, a pop-up will appear to user. The message of the pop-up is “Error occurred while you log in. Please log in again.”. When the user clicks “confirm button”, pop-up disappear and back to login page.\\\\
 \item{User Register}\\\\
-\\\centerline{\includegraphics[scale=0.6]{pics/register.png}}\\
+\\\centerline{\includegraphics[scale=0.4]{pics/register.png}}\\
 \\\\To sign up for the membership, Metakicks requires the user's name, email address, password and verifing password.\\
 	\begin{enumerate}
 		\item[-]The name must be entered in 8 characters or less.\\\\
@@ -300,15 +300,19 @@ If you go to the Metakicks homepage, the main page appears. At the center of the
 \\\centerline{\includegraphics[scale=0.3]{pics/trending.png}}\\
 \\\\ "Trending now" is organized at the bottom of the main page. "Trending now" shows the names and photos of the products currently popular on Stockx, which is the shoes trading site. If you click on a photo of the products that are on screen, a "Pop-Up" with product details appears.\\
 	\item Trending Shoes Pop-Up\\\\
-\\\centerline{\includegraphics[scale=0.35]{pics/trending_detail.png}}
+\\\centerline{\includegraphics[scale=0.33]{pics/trending_detail.png}}
 \\When the user clicks the image in "Trending now", a pop-up page appears. The pop-up contains the price of shoes and detailed information about shoes.\\\\
 	\item Search Bar \\\\
 \centerline{\includegraphics[scale=0.35]{pics/searchbar.png}}\\\\
 In the middle of the main page, there is a search bar. This search bar allows you to search for shoes based on stockx data. When the user enters a search word, shoes including the search word are displayed on the screen. Like "Trending Now" page, when the user clicks on an image of a shoes, a pop-up page appears with prices and details about the shoes.\\
+	\item Search Shoes \\\\
+\centerline{\includegraphics[scale=0.24]{pics/search_screen.png}}\\\\
+When the user types the search word on Search Bar, the shoes corresponding to the search word are appear.\\
 	\item Search Shoes Pop-Up\\\\
 \\\centerline{\includegraphics[scale=0.35]{pics/search_detail.png}}
-\\When the user clicks the image of the shoes in the search result, a pop-up window appears. The pop-up contains the price of shoes and information about shoes. Also, unlike the pop-up of "Trending Now," the user can add the shoes to the user's shoecase on this pop-up page. \\
+\\When the user clicks the image of the shoes in the search result, a pop-up window appears. The pop-up contains the price of shoes and information about shoes. Also, unlike the pop-up of "My ShoeCase," the user can add the shoes to the user's shoecase on this pop-up page. \\
 	\item Navigation Bar \\
+\centerline{\includegraphics[scale=0.35]{pics/nav_bar.png}}
 	\begin{enumerate}
 		\item[-]Login Button \\\\
 		If the user clicks this "Login" button,login pop-up appears.\\
@@ -319,28 +323,27 @@ In the middle of the main page, there is a search bar. This search bar allows yo
 	\end{enumerate}
 	\begin{enumerate}
 		\item[-]Home Button \\\\
-		If the user clicks this "Home" button, it goes to the first page of main page.\\
+		If the user clicks this "Metakicks" button, it goes to the first page of main page.\\
 	\end{enumerate}
 	\begin{enumerate}
-		\item[-]Finding User Button \\\\
-		If the user clicks this "Finding User Button" button, it goes to the finding other user page.\\
-	\end{enumerate}
-	\begin{enumerate}
-		\item[-]About Button \\\\
-		If the user clicks this "About" button, it goes to the detailed description of this web.\\
+		\item[-]Finding User Search Bar \\\\
+		If the user type the name of the other user, it goes to the finding other user page.\\
 	\end{enumerate}
 
 \end{enumerate}
 
 \subsection{My ShoeCase}
+\centerline{\includegraphics[scale=0.23]{pics/mycase.png}}
 When the user presses the "My Shocase" button on the upper right of "Trending Now" on the main page, it switches to its own Shocase screen. Users can add shoes searched on the Search bar to My shoecase, and the added shoes are displayed on this screen. In My Shocase, you can check the price of registered shoes and check the environment for shoe management, such as the temperature and humidity of the shoecase where the shoes are stored.\\\\
 \begin{enumerate}
 	\item Register Shoes\\\\
-\\To register your shoes in the ShoeCase, you need to use the search bar to search shoes. If the user finds the shoes that the user want to register, the user can register the shoes through click the "Add to my ShoeCase" button in search shoes pop-up. My Shoecase page display the registered shoes.\\\\
+\centerline{\includegraphics[scale=0.35]{pics/shoes_register.png}}
+\\\\To register your shoes in the ShoeCase, you need to use the search bar to search shoes. If the user finds the shoes that the user want to register, the user can register the shoes through click the "Add to my ShoeCase" button in search shoes pop-up. My Shoecase page display the registered shoes.\\\\
 	
-	\item Registered Shoes Information\\\\
-\\In "Registered Shoes", registered shoes items can be clicked to display shoe information and real-time resell prices. The shoes information appears with the pop-up page.
-The information and price of shoes are implemented to be obtained through the Stockx data. The shoes registered by the user can be shared with others.\\\\
+	\item Shoes Information in My ShoeCase\\\\
+\\\centerline{\includegraphics[scale=0.33]{pics/mycase_info.png}}
+\\\\In "My ShoeCase", registered shoes items can be clicked to display shoe information and real-time resell prices. The shoes information appears with the pop-up page and the temperature and humid of the Shoecase displayed in the bottom of the pop-up.
+The information and price of shoes are implemented to be obtained through the Stockx data . The shoes registered by the user can be shared with others.\\\\
 	\item Public/Private Setting\\\\
 \\Each item property has a check box where you can set public/private. 
 If the checkbox is marked, it will be disclosed. If it is checked, it will be closed.\\\\
@@ -353,15 +356,17 @@ The number of Kick is also calculated, so you can see how many people like it.\\
 \subsection{Finding Other User}
 \begin{enumerate}
 	\item Search other user\\\\
-\\\centerline{\includegraphics[scale=0.35]{pics/finding_user.png}}\\\\
+\\\centerline{\includegraphics[scale=0.32]{pics/nav_bar.png}}\\\\
 \\When the user type the name of other user on the top of the website, the result of the other user list appears.\\\\
 	\item Search other user list\\
+\\\centerline{\includegraphics[scale=0.19]{pics/user_list.png}}\\\\
 \\The other user lists on the screen. If the user clicks the other user's name on the screen, the user can see the other user's shoecase.\\\\
 \end{enumerate}
 
 \subsection{Other user's ShoeCase}
 \begin{enumerate}
 	\item Main ShoeCase Page\\
+\\\centerline{\includegraphics[scale=0.19]{pics/user_shoecase.png}}\\\\
 \\When the user clicks the other user's name searched in "Finding other user", it goes to the user's Shoecase page. Like the "My ShoeCase" page, the user can see the shoes registered by other user.\\\\
 
 	\item Detailed ShoeCase Page\\
@@ -483,7 +488,7 @@ When you first access MetaKicks, you first see the main page with LG Shoe Styler
 \item[-]Top bar\\
 The top bar includes  Home buttons to return to the main page, buttons to log in and sign up, and a search bar to search for other users.\\
 \item[-]Search bar\\
-The search bar allows you to enter a name or style code for your shoes. When you search, you will list the shoes you have searched under the search window based on the shoes on the StockX site. When you click on each shoe, you'll see the details of the shoe and the price information by size. You can also click the Add button to add it to your shoecase.\\
+The search bar allows you to enter a name or style code for your shoes. When you search, you will list the shoes you have searched under the search window based on the shoes on the StockX site. When you click on each shoes, you'll see the details of the shoes and the price information by size. You can also click the Add button to add it to your shoecase.\\
 \item[-]Mini cards\\
 The mini card has the image, price information, and product name of the shoes. You can see simple information on the mini card, and when you click on the mini card, you will see detailed information on shoes and price information by size. All information will appear on a StockX basis because it receives data from StockX. In addition, the mini-card pop-up window will have an additional button that will allow you to add shoes to your own Shoecase.\\
 \end{enumerate}
@@ -503,7 +508,7 @@ If you search for shoes or look at the latest trendy items on the main menu, bri
 \subsection{Trending}
 When you see the main menu for the first time, a window called Trending Now appears. In that window, you can get the product information of the shoes from StockX that we use and search for it, and you can see many mini cards. Just like this, users can interact with shoe products, and the information that appears when you click on this window is the same. If you have any shoes you like here, you can add them to your own Shoecase.\\\\
 \subsection{My Shoecase}
-In the My Shocase menu, you can look at the items of shoes you have registered. The shoes registered through the Add button on the mini card will appear by item. You can also search for other people's ShoCase, or you can search for My ShoCase.
+In the My Shocase menu, you can look at the items of shoes you have registered. The shoes registered through the Add button on the mini card will appear by item. You can also search for other people's ShoCase, or you can search for My ShoCase.\\\\
 \subsection{Finding Other User}
 If the user want to see the other user's shoecase, the user can type the other user's name on the top of website. The result user list will be appear on the web. To see the user's shoecase, the user can clicks the other user's name and can see the shoecase.\\\\
 \subsection{Other user's shoecase}
